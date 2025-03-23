@@ -78,7 +78,7 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = global::Login.Properties.Resources.cadastroIcon1;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(997, 6);
+            this.button3.Location = new System.Drawing.Point(984, 5);
             this.button3.Name = "button3";
             this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button3.Size = new System.Drawing.Size(132, 33);
@@ -98,7 +98,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::Login.Properties.Resources.relogioIcon1;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(861, 6);
+            this.button2.Location = new System.Drawing.Point(834, 5);
             this.button2.Name = "button2";
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button2.Size = new System.Drawing.Size(132, 33);
@@ -118,7 +118,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Login.Properties.Resources.alertaIcon1;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(723, 6);
+            this.button1.Location = new System.Drawing.Point(684, 5);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button1.Size = new System.Drawing.Size(132, 33);
@@ -139,7 +139,7 @@
             this.btnSalario.ForeColor = System.Drawing.Color.White;
             this.btnSalario.Image = global::Login.Properties.Resources.moedaicon;
             this.btnSalario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalario.Location = new System.Drawing.Point(585, 6);
+            this.btnSalario.Location = new System.Drawing.Point(534, 5);
             this.btnSalario.Name = "btnSalario";
             this.btnSalario.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnSalario.Size = new System.Drawing.Size(132, 33);

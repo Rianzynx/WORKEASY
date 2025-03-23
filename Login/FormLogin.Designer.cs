@@ -81,7 +81,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Login.Properties.Resources.logo4;
+            this.pictureBox1.BackgroundImage = global::Login.Properties.Resources.logo;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(-53, -106);
             this.pictureBox1.Name = "pictureBox1";
@@ -92,7 +92,6 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::Login.Properties.Resources.robogif;
             this.pictureBox2.Location = new System.Drawing.Point(312, 199);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(79, 85);
@@ -135,7 +134,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = global::Login.Properties.Resources.userIcon;
-            this.pictureBox4.Image = global::Login.Properties.Resources.userIcon1;
+            this.pictureBox4.Image = global::Login.Properties.Resources.userIcon;
             this.pictureBox4.Location = new System.Drawing.Point(350, 50);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(30, 30);
@@ -146,8 +145,7 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImage = global::Login.Properties.Resources.passNotHide2;
-            this.pictureBox5.Image = global::Login.Properties.Resources.passNotHide2;
+            this.pictureBox5.Image = global::Login.Properties.Resources.passNotHide;
             this.pictureBox5.Location = new System.Drawing.Point(344, 104);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(40, 30);
@@ -175,7 +173,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Login.Properties.Resources.fundo8;
+            this.BackgroundImage = global::Login.Properties.Resources.fundo;
             this.ClientSize = new System.Drawing.Size(800, 300);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.pictureBox5);

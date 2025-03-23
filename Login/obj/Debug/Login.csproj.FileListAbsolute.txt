@@ -42,6 +42,7 @@ C:\Users\Rian\source\repos\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
 C:\Users\Rian\source\repos\Login\obj\Debug\Login.csproj.Up2Date
 C:\Users\Rian\source\repos\Login\obj\Debug\Login.exe
 C:\Users\Rian\source\repos\Login\obj\Debug\Login.pdb
+C:\Users\Rian\Documents\GitHub\WORKEASY\Login\bin\Debug\Resources\email.png
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\bin\Debug\Login.exe.config
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\bin\Debug\Login.exe
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\bin\Debug\Login.pdb
@@ -79,7 +80,10 @@ C:\Users\Rian\Documents\GitHub\WORKEASY\Login\bin\Debug\System.ValueTuple.xml
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.csproj.AssemblyReference.cache
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.Form1.resources
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.FormCarregamento.resources
+C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.FormFuncionario.resources
+C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.FormInicio.resources
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.FormLogin.resources
+C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.FormSolicitacao.resources
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.Properties.Resources.resources
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.csproj.GenerateResource.cache
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache

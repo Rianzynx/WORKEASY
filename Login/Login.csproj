@@ -109,11 +109,29 @@
     <Compile Include="FormCarregamento.Designer.cs">
       <DependentUpon>FormCarregamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFuncionario.Designer.cs">
+      <DependentUpon>FormFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInicio.Designer.cs">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSolicitacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSolicitacao.Designer.cs">
+      <DependentUpon>FormSolicitacao.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -123,24 +141,28 @@
     <EmbeddedResource Include="FormCarregamento.resx">
       <DependentUpon>FormCarregamento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormFuncionario.resx">
+      <DependentUpon>FormFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInicio.resx">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
+    <EmbeddedResource Include="FormSolicitacao.resx">
+      <DependentUpon>FormSolicitacao.cs</DependentUpon>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -151,10 +173,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo.png" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\email.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\WORKEASY.png" />
+    <None Include="Resources\emailOpen.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fundo.png" />
@@ -163,76 +191,100 @@
     <None Include="Resources\fundogif.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\robogif.gif" />
+    <None Include="Resources\fundoMenu.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fundo1.png" />
+    <None Include="Resources\iconLupa.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo1.png" />
+    <None Include="Resources\logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\botao-x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fundo2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logo2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fundo3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fundo4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\#295264 %283%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\WORKEASY1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\WORKEASY2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\WORKEASY3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\WORKEASY4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fundo5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\userIcon.png" />
+    <None Include="Resources\passHide.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\passNotHide.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\robogif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WORKEASY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notificacoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moedaIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moedaicon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emailOpen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundogif1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundoMenu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconLupa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moedaicon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notificacoes1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passHide1.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\passNotHide1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\passNotHide2.png" />
+    <None Include="Resources\relogioIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\robogif1.gif" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\userIcon1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo3.png" />
+    <None Include="Resources\WORKEASY1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo4.png" />
+    <None Include="Resources\alertaIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fundo6.png" />
+    <None Include="Resources\botao-x.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fundo7.png" />
+    <None Include="Resources\cadastroIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fundo8.png" />
+    <None Include="Resources\email2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moedaicon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relogioIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />

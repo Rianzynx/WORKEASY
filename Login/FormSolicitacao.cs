@@ -56,7 +56,6 @@ namespace Login
             dataTable.Rows.Add(RedimensionarImagem(Resources.email1, 40, 40), "Ricardo Santos", "Reintegração ao Trabalho", "09:40");
             dataTable.Rows.Add(RedimensionarImagem(Resources.email1, 40, 40), "Sônia Lima", "Solicitação de Benefícios", "13:05");
 
-            // Ordena o DataTable pela coluna "Horario"
             var sortedRows = dataTable.AsEnumerable()
                                       .OrderByDescending(row => TimeSpan.Parse(row.Field<string>("Horario")))
                                       .ToArray();
@@ -231,23 +230,18 @@ namespace Login
 
         private void AjustarImagemNoDataGridView()
         {
-            // Centraliza o conteúdo da célula horizontal e verticalmente para a coluna iconEmail
             dataGridView1.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-            // Definir um tamanho fixo para a célula (ajuste conforme necessário)
-            dataGridView1.RowTemplate.Height = 50; // Defina a altura para acomodar a imagem
-            dataGridView1.Columns[0].Width = 50;   // Defina a largura para a coluna de ícones
+            dataGridView1.RowTemplate.Height = 50; 
+            dataGridView1.Columns[0].Width = 50;  
 
-            // Se você precisar garantir que a imagem ocupe o centro da célula sem distorcer
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
-                // Acessa a célula da coluna 0 (iconEmail) e define o layout da imagem
                 DataGridViewImageCell imageCell = row.Cells[0] as DataGridViewImageCell;
                 if (imageCell != null)
                 {
-                    // Centraliza a imagem (sem distorção)
                     imageCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                    imageCell.ImageLayout = DataGridViewImageCellLayout.Zoom; // Ajusta a imagem para caber na célula sem estourar
+                    imageCell.ImageLayout = DataGridViewImageCellLayout.Zoom; 
                 }
             }
         }

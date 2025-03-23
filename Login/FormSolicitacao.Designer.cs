@@ -111,6 +111,7 @@
             // 
             // txtPesquisa
             // 
+            this.txtPesquisa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPesquisa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPesquisa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPesquisa.Location = new System.Drawing.Point(904, 14);
@@ -121,6 +122,7 @@
             // 
             // btnPesquisar
             // 
+            this.btnPesquisar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPesquisar.BackColor = System.Drawing.Color.Transparent;
             this.btnPesquisar.BackgroundImage = global::Login.Properties.Resources.iconLupa;
             this.btnPesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -137,13 +139,12 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(533, 14);
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 20);
+            this.label1.Size = new System.Drawing.Size(1154, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "SOLICITAÇÕES";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

@@ -286,6 +286,21 @@
   <ItemGroup>
     <None Include="Resources\relogioIcon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alertaIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relogioIcon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastroIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundoIni.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoInicial.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

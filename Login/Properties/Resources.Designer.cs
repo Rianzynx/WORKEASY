@@ -73,6 +73,16 @@ namespace Login.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap alertaIcon1 {
+            get {
+                object obj = ResourceManager.GetObject("alertaIcon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap botao_x {
             get {
                 object obj = ResourceManager.GetObject("botao-x", resourceCulture);
@@ -86,6 +96,16 @@ namespace Login.Properties {
         internal static System.Drawing.Bitmap cadastroIcon {
             get {
                 object obj = ResourceManager.GetObject("cadastroIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cadastroIcon1 {
+            get {
+                object obj = ResourceManager.GetObject("cadastroIcon1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,6 +156,26 @@ namespace Login.Properties {
         internal static System.Drawing.Bitmap fundogif {
             get {
                 object obj = ResourceManager.GetObject("fundogif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fundoIni {
+            get {
+                object obj = ResourceManager.GetObject("fundoIni", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FundoInicial {
+            get {
+                object obj = ResourceManager.GetObject("FundoInicial", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +256,16 @@ namespace Login.Properties {
         internal static System.Drawing.Bitmap relogioIcon {
             get {
                 object obj = ResourceManager.GetObject("relogioIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap relogioIcon1 {
+            get {
+                object obj = ResourceManager.GetObject("relogioIcon1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -43,7 +43,7 @@
             this.Pbar.InnerColor = System.Drawing.Color.Transparent;
             this.Pbar.InnerMargin = 2;
             this.Pbar.InnerWidth = -1;
-            this.Pbar.Location = new System.Drawing.Point(199, 308);
+            this.Pbar.Location = new System.Drawing.Point(201, 308);
             this.Pbar.MarqueeAnimationSpeed = 2000;
             this.Pbar.Name = "Pbar";
             this.Pbar.OuterColor = System.Drawing.Color.Gray;
@@ -76,7 +76,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Login.Properties.Resources.WORKEASY;
+            this.BackgroundImage = global::Login.Properties.Resources.WORKEASY1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(500, 510);
             this.Controls.Add(this.Pbar);

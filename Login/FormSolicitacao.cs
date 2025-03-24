@@ -88,8 +88,6 @@ namespace Login
             dataGridView1.CellMouseLeave += dataGridView1_CellMouseLeave;
 
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.Transparent;
-            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black;
 
 
             AjustarLarguraDasColunas();

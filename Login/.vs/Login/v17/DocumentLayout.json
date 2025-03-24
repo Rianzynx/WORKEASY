@@ -3,28 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\formsolicitacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:formsolicitacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|c:\\users\\rian\\documents\\github\\workeasy\\login\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\formfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:formfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|c:\\users\\rian\\documents\\github\\workeasy\\login\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\formcarregamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:formcarregamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|c:\\users\\rian\\documents\\github\\workeasy\\login\\formfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:formfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\formsolicitacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:formsolicitacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\formsolicitacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:formsolicitacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,18 +59,6 @@
       "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:resources\\email.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\formfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:formfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\formcarregamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:formcarregamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\formcarregamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:formcarregamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -69,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\forminicio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:forminicio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{743E0671-E496-4B8A-8CEF-DFDC02247491}|Login.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,17 +82,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "FormSolicitacao.cs",
               "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormSolicitacao.cs",
               "RelativeDocumentMoniker": "FormSolicitacao.cs",
               "ToolTip": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormSolicitacao.cs",
               "RelativeToolTip": "FormSolicitacao.cs",
-              "ViewState": "AgIAAPcAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFkAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T17:45:53.204Z",
               "IsPinned": true,
@@ -100,44 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormInicio.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormInicio.cs",
-              "RelativeDocumentMoniker": "FormInicio.cs",
-              "ToolTip": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormInicio.cs [Design]",
-              "RelativeToolTip": "FormInicio.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T17:43:56.03Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormFuncionario.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormFuncionario.cs",
-              "RelativeDocumentMoniker": "FormFuncionario.cs",
-              "ToolTip": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormFuncionario.cs [Design]",
-              "RelativeToolTip": "FormFuncionario.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T17:40:16.245Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T19:00:13.02Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -149,7 +112,94 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "FormFuncionario.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormFuncionario.cs",
+              "RelativeDocumentMoniker": "FormFuncionario.cs",
+              "ToolTip": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormFuncionario.cs [Design]",
+              "RelativeToolTip": "FormFuncionario.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T17:40:16.245Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormFuncionario.cs",
+              "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormFuncionario.cs",
+              "RelativeDocumentMoniker": "FormFuncionario.cs",
+              "ToolTip": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormFuncionario.cs",
+              "RelativeToolTip": "FormFuncionario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T16:58:12.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAvwD8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T17:05:05.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T19:00:13.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormCarregamento.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormCarregamento.cs",
+              "RelativeDocumentMoniker": "FormCarregamento.cs",
+              "ToolTip": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormCarregamento.cs [Design]",
+              "RelativeToolTip": "FormCarregamento.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T20:42:01.916Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormInicio.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormInicio.cs",
+              "RelativeDocumentMoniker": "FormInicio.cs",
+              "ToolTip": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormInicio.cs [Design]",
+              "RelativeToolTip": "FormInicio.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T17:43:56.03Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormLogin.cs",
+              "RelativeDocumentMoniker": "FormLogin.cs",
+              "ToolTip": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormLogin.cs [Design]",
+              "RelativeToolTip": "FormLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T20:38:01.872Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "FormSolicitacao.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormSolicitacao.cs",
               "RelativeDocumentMoniker": "FormSolicitacao.cs",
@@ -161,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "FormInicio.cs",
               "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormInicio.cs",
               "RelativeDocumentMoniker": "FormInicio.cs",
@@ -174,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "FormLogin.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormLogin.Designer.cs",
               "RelativeDocumentMoniker": "FormLogin.Designer.cs",
@@ -182,11 +232,12 @@
               "RelativeToolTip": "FormLogin.Designer.cs",
               "ViewState": "AgIAAEwAAAAAAAAAAAAuwFoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T20:53:59.653Z"
+              "WhenOpened": "2025-03-23T20:53:59.653Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "FormLogin.cs",
               "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormLogin.cs",
               "RelativeDocumentMoniker": "FormLogin.cs",
@@ -194,11 +245,12 @@
               "RelativeToolTip": "FormLogin.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAAACkAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T21:01:30.586Z"
+              "WhenOpened": "2025-03-23T21:01:30.586Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "email.png",
               "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\Resources\\email.png",
               "RelativeDocumentMoniker": "Resources\\email.png",
@@ -209,42 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FormLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormLogin.cs",
-              "RelativeDocumentMoniker": "FormLogin.cs",
-              "ToolTip": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormLogin.cs [Design]",
-              "RelativeToolTip": "FormLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T20:38:01.872Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FormFuncionario.cs",
-              "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormFuncionario.cs",
-              "RelativeDocumentMoniker": "FormFuncionario.cs",
-              "ToolTip": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormFuncionario.cs",
-              "RelativeToolTip": "FormFuncionario.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAlwCcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T20:59:56.848Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FormCarregamento.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormCarregamento.cs",
-              "RelativeDocumentMoniker": "FormCarregamento.cs",
-              "ToolTip": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormCarregamento.cs [Design]",
-              "RelativeToolTip": "FormCarregamento.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T20:42:01.916Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "FormCarregamento.cs",
               "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormCarregamento.cs",
               "RelativeDocumentMoniker": "FormCarregamento.cs",
@@ -252,11 +269,12 @@
               "RelativeToolTip": "FormCarregamento.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T20:52:38.134Z"
+              "WhenOpened": "2025-03-23T20:52:38.134Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "FormFuncionario.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormFuncionario.Designer.cs",
               "RelativeDocumentMoniker": "FormFuncionario.Designer.cs",
@@ -269,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "FormSolicitacao.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormSolicitacao.Designer.cs",
               "RelativeDocumentMoniker": "FormSolicitacao.Designer.cs",
@@ -282,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "FormInicio.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\FormInicio.Designer.cs",
               "RelativeDocumentMoniker": "FormInicio.Designer.cs",
@@ -291,19 +309,6 @@
               "ViewState": "AgIAAFwAAAAAAAAAAAAAAEgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-23T20:00:45.237Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Rian\\Documents\\GitHub\\WORKEASY\\Login\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAawHkAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T17:05:05.369Z",
               "EditorCaption": ""
             }
           ]

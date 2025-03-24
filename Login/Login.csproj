@@ -301,6 +301,24 @@
   <ItemGroup>
     <None Include="Resources\FundoInicial.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\funcionariosIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\investimentoIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\felicidadeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trabHomemIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WORKEASY2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sairIcon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

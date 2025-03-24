@@ -185,7 +185,13 @@ namespace Login
 
         private void FormFuncionario_Load(object sender, EventArgs e)
         {
-
+            panel3.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+            panel3.Height = panelDados.Height;
+            panel3.Location = new System.Drawing.Point(
+                (panelDados.Width - panel2.Width - panel2.Width) / 2,  
+                0
+            );
+            panelDados.Controls.Add(panel2);
         }
         private void label1_Click(object sender, EventArgs e)
         {

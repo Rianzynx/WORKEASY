@@ -188,7 +188,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(111, 76);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(264, 108);
+            this.panel1.Size = new System.Drawing.Size(263, 108);
             this.panel1.TabIndex = 5;
             // 
             // label2
@@ -290,7 +290,6 @@
             // 
             // panel4
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.pictureBox3);

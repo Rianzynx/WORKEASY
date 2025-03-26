@@ -124,5 +124,21 @@ namespace Login
 
             formFuncionario.Show();
         }
+
+
+        private void btnLogout(object sender, EventArgs e)
+        {
+            DialogResult Logout;
+            Logout = MessageBox.Show("Deseja mesmo sair?", "Pergunta", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (Logout.Equals(DialogResult.No))
+            {
+
+            }
+            else
+            {
+                Application.Exit();
+            }
+        }
     }
 }

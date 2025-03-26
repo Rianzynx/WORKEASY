@@ -79,6 +79,7 @@ C:\Users\Rian\Documents\GitHub\WORKEASY\Login\bin\Debug\System.Threading.Tasks.E
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\bin\Debug\System.ValueTuple.xml
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.csproj.AssemblyReference.cache
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.Form1.resources
+C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.FormCadastrar.resources
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.FormCarregamento.resources
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.FormFuncionario.resources
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.FormInicio.resources

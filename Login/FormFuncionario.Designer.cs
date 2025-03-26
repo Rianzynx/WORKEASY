@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnCadastro = new System.Windows.Forms.Button();
@@ -51,8 +51,10 @@
             this.dgvColab = new System.Windows.Forms.DataGridView();
             this.lblColab = new System.Windows.Forms.Label();
             this.txtPesquisarColab = new System.Windows.Forms.TextBox();
-            this.panelDados = new System.Windows.Forms.Panel();
+            this.pDados = new System.Windows.Forms.Panel();
             this.btnPesquisarColab = new System.Windows.Forms.Button();
+            this.pDGV = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,7 +63,9 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvColab)).BeginInit();
-            this.panelDados.SuspendLayout();
+            this.pDados.SuspendLayout();
+            this.pDGV.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -113,6 +117,7 @@
             this.btnCadastro.Text = "CADASTRAR";
             this.btnCadastro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCadastro.UseVisualStyleBackColor = false;
+            this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
             // 
             // btnHoras
             // 
@@ -181,12 +186,11 @@
             // 
             // panel1
             // 
-            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(111, 76);
+            this.panel1.Location = new System.Drawing.Point(108, 31);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(263, 108);
             this.panel1.TabIndex = 5;
@@ -197,7 +201,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(8, 9);
+            this.label2.Location = new System.Drawing.Point(8, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(133, 15);
             this.label2.TabIndex = 6;
@@ -206,7 +210,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Login.Properties.Resources.funcionariosIcon;
-            this.pictureBox1.Location = new System.Drawing.Point(128, 8);
+            this.pictureBox1.Location = new System.Drawing.Point(128, 11);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(132, 84);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -219,7 +223,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(20, 22);
+            this.label3.Location = new System.Drawing.Point(20, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 65);
             this.label3.TabIndex = 6;
@@ -259,7 +263,7 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(419, 76);
+            this.panel3.Location = new System.Drawing.Point(419, 31);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(264, 108);
             this.panel3.TabIndex = 7;
@@ -294,7 +298,7 @@
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Controls.Add(this.label7);
-            this.panel4.Location = new System.Drawing.Point(730, 76);
+            this.panel4.Location = new System.Drawing.Point(730, 31);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(264, 108);
             this.panel4.TabIndex = 8;
@@ -342,28 +346,27 @@
             this.dgvColab.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvColab.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvColab.ColumnHeadersVisible = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvColab.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvColab.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvColab.GridColor = System.Drawing.Color.Gray;
-            this.dgvColab.Location = new System.Drawing.Point(0, 224);
+            this.dgvColab.Location = new System.Drawing.Point(115, 75);
             this.dgvColab.Name = "dgvColab";
             this.dgvColab.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgvColab.Size = new System.Drawing.Size(1138, 337);
+            this.dgvColab.Size = new System.Drawing.Size(879, 200);
             this.dgvColab.TabIndex = 9;
             // 
             // lblColab
             // 
-            this.lblColab.AutoSize = true;
             this.lblColab.BackColor = System.Drawing.Color.Transparent;
             this.lblColab.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblColab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(25)))), ((int)(((byte)(43)))));
-            this.lblColab.Location = new System.Drawing.Point(7, 155);
+            this.lblColab.Location = new System.Drawing.Point(12, 181);
             this.lblColab.Name = "lblColab";
             this.lblColab.Size = new System.Drawing.Size(146, 21);
             this.lblColab.TabIndex = 10;
@@ -373,23 +376,27 @@
             // txtPesquisarColab
             // 
             this.txtPesquisarColab.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPesquisarColab.BackColor = System.Drawing.Color.White;
+            this.txtPesquisarColab.BackColor = System.Drawing.SystemColors.Control;
             this.txtPesquisarColab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPesquisarColab.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPesquisarColab.Location = new System.Drawing.Point(901, 192);
+            this.txtPesquisarColab.Location = new System.Drawing.Point(894, 181);
             this.txtPesquisarColab.Multiline = true;
             this.txtPesquisarColab.Name = "txtPesquisarColab";
             this.txtPesquisarColab.Size = new System.Drawing.Size(187, 27);
             this.txtPesquisarColab.TabIndex = 11;
             // 
-            // panelDados
+            // pDados
             // 
-            this.panelDados.Controls.Add(this.lblColab);
-            this.panelDados.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDados.Location = new System.Drawing.Point(0, 45);
-            this.panelDados.Name = "panelDados";
-            this.panelDados.Size = new System.Drawing.Size(1138, 179);
-            this.panelDados.TabIndex = 13;
+            this.pDados.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pDados.BackColor = System.Drawing.SystemColors.Control;
+            this.pDados.Controls.Add(this.pDGV);
+            this.pDados.Controls.Add(this.panel6);
+            this.pDados.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pDados.Location = new System.Drawing.Point(0, 45);
+            this.pDados.Name = "pDados";
+            this.pDados.Size = new System.Drawing.Size(1138, 516);
+            this.pDados.TabIndex = 13;
+            this.pDados.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDados_Paint);
             // 
             // btnPesquisarColab
             // 
@@ -399,14 +406,39 @@
             this.btnPesquisarColab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPesquisarColab.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPesquisarColab.FlatAppearance.BorderSize = 0;
-            this.btnPesquisarColab.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(25)))), ((int)(((byte)(43)))));
-            this.btnPesquisarColab.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(25)))), ((int)(((byte)(43)))));
+            this.btnPesquisarColab.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnPesquisarColab.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnPesquisarColab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPesquisarColab.Location = new System.Drawing.Point(1071, 188);
+            this.btnPesquisarColab.Location = new System.Drawing.Point(1066, 176);
             this.btnPesquisarColab.Name = "btnPesquisarColab";
             this.btnPesquisarColab.Size = new System.Drawing.Size(81, 33);
             this.btnPesquisarColab.TabIndex = 12;
             this.btnPesquisarColab.UseVisualStyleBackColor = false;
+            // 
+            // pDGV
+            // 
+            this.pDGV.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pDGV.Controls.Add(this.dgvColab);
+            this.pDGV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pDGV.Location = new System.Drawing.Point(0, 217);
+            this.pDGV.Name = "pDGV";
+            this.pDGV.Size = new System.Drawing.Size(1138, 299);
+            this.pDGV.TabIndex = 11;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.SystemColors.Control;
+            this.panel6.Controls.Add(this.panel4);
+            this.panel6.Controls.Add(this.lblColab);
+            this.panel6.Controls.Add(this.panel3);
+            this.panel6.Controls.Add(this.btnPesquisarColab);
+            this.panel6.Controls.Add(this.panel1);
+            this.panel6.Controls.Add(this.txtPesquisarColab);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1138, 217);
+            this.panel6.TabIndex = 12;
             // 
             // FormFuncionario
             // 
@@ -414,13 +446,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1138, 561);
-            this.Controls.Add(this.txtPesquisarColab);
-            this.Controls.Add(this.btnPesquisarColab);
-            this.Controls.Add(this.dgvColab);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panelDados);
+            this.Controls.Add(this.pDados);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormFuncionario";
@@ -438,10 +464,11 @@
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvColab)).EndInit();
-            this.panelDados.ResumeLayout(false);
-            this.panelDados.PerformLayout();
+            this.pDados.ResumeLayout(false);
+            this.pDGV.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -469,6 +496,8 @@
         private System.Windows.Forms.Label lblColab;
         private System.Windows.Forms.TextBox txtPesquisarColab;
         private System.Windows.Forms.Button btnPesquisarColab;
-        private System.Windows.Forms.Panel panelDados;
+        private System.Windows.Forms.Panel pDados;
+        private System.Windows.Forms.Panel pDGV;
+        private System.Windows.Forms.Panel panel6;
     }
 }

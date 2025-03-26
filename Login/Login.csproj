@@ -103,6 +103,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastrar.Designer.cs">
+      <DependentUpon>FormCadastrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCarregamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastrar.resx">
+      <DependentUpon>FormCadastrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCarregamento.resx">
       <DependentUpon>FormCarregamento.cs</DependentUpon>

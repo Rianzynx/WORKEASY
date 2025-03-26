@@ -186,12 +186,12 @@ namespace Login
         private void FormFuncionario_Load(object sender, EventArgs e)
         {
             panel3.Anchor = AnchorStyles.Top | AnchorStyles.Left;
-            panel3.Height = panelDados.Height;
+            panel3.Height = pDados.Height;
             panel3.Location = new System.Drawing.Point(
-                (panelDados.Width - panel2.Width - panel2.Width) / 2,  
+                (pDados.Width - panel2.Width - panel2.Width) / 2,  
                 0
             );
-            panelDados.Controls.Add(panel2);
+            pDados.Controls.Add(panel2);
         }
         private void label1_Click(object sender, EventArgs e)
         {
@@ -226,6 +226,30 @@ namespace Login
         private void lblColab_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panelDados_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnCadastro_Click(object sender, EventArgs e)
+        {
+            FormCadastrar formCadastrar = new FormCadastrar();
+
+            formCadastrar.TopLevel = false;
+            formCadastrar.FormBorderStyle = FormBorderStyle.None;
+            formCadastrar.Dock = DockStyle.Fill;
+
+            // Limpa os controles anteriores
+            pDados.Controls.Clear();
+
+            // Adiciona o novo formulário
+            pDados.Controls.Add(formCadastrar);
+            formCadastrar.Dock = DockStyle.Fill;
+
+            // Exibe o formulário
+            formCadastrar.Show();
         }
     }
 }

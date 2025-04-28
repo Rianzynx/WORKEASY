@@ -12,9 +12,12 @@ namespace Login
 {
     public partial class Form1: Form
     {
+
+        public static Form1 Instance;
         public Form1()
         {
             InitializeComponent();
+            Instance = this;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -139,6 +142,75 @@ namespace Login
             {
                 Application.Exit();
             }
+        }
+
+        private bool estaComLua = true;
+        private void btnSolClick(object sender, EventArgs e)
+        {
+            if (estaComLua)
+            {
+                // Tema Escuro
+                btnSol.Image = Properties.Resources.iconSol;
+                this.BackColor = Color.FromArgb(30, 30, 30); // Fundo do formulário
+                panelTop.BackColor = Color.FromArgb(45, 45, 48);
+                lblNome.ForeColor = Color.White;
+                if (Form1.Instance != null)
+                {
+                    Form1.Instance.PanelMenu.BackColor = Color.FromArgb(50, 50, 50);// muda o panel do Form1 já aberto
+                }
+                panelTop.ForeColor = Color.White; // Texto do menu
+                foreach (Control ctrl in this.Controls)
+                {
+                    if (ctrl is Button btn)
+                    {
+                        btn.BackColor = Color.FromArgb(50, 50, 50);
+                        btn.ForeColor = Color.White;
+                    }
+                    if (ctrl is Label lbl)
+                    {
+                        lbl.ForeColor = Color.White;
+                    }
+                }
+
+                estaComLua = false;
+            }
+            else
+            {
+                // Tema Claro
+                btnSol.Image = Properties.Resources.iconLua;
+                this.BackColor = Color.White;
+                panelTop.BackColor = Color.White;
+                lblNome.ForeColor = Color.DarkGray;
+
+                if (Form1.Instance != null)
+                {
+                    Form1.Instance.PanelMenu.BackColor = Color.White;
+                }
+
+                panelTop.ForeColor = Color.Black;
+
+                foreach (Control ctrl in this.Controls)
+                {
+                    if (ctrl is Button btn)
+                    {
+                        btn.BackColor = Color.White;
+                        btn.ForeColor = Color.Black;
+                    }
+                    if (ctrl is Label lbl)
+                    {
+                        lbl.ForeColor = Color.Black;
+                    }
+                }
+
+                estaComLua = true;
+            }
+
+            btnSol.ImageAlign = ContentAlignment.MiddleCenter;
+        }
+
+        public Panel PanelMenu
+        {
+            get { return panelMenu; }
         }
     }
 }

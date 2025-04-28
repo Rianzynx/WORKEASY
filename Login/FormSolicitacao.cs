@@ -84,6 +84,9 @@ namespace Login
             dataGridView1.AllowUserToResizeColumns = false;
             dataGridView1.AllowUserToResizeRows = false;
 
+            dataGridView1.ScrollBars = ScrollBars.Vertical;
+
+
             dataGridView1.CellMouseEnter += dataGridView1_CellMouseEnter;
             dataGridView1.CellMouseLeave += dataGridView1_CellMouseLeave;
 
@@ -131,7 +134,7 @@ namespace Login
            
             dataGridView1.Columns[0].Width = (int)(larguraTotal * 0.1);
             dataGridView1.Columns[1].Width = (int)(larguraTotal * 0.2);
-            dataGridView1.Columns[2].Width = (int)(larguraTotal * 0.5);
+            dataGridView1.Columns[2].Width = (int)(larguraTotal * 0.6);
             dataGridView1.Columns[3].Width = (int)(larguraTotal * 0.1);
 
 
@@ -193,14 +196,14 @@ namespace Login
         {
 
         }
-
+        
         private void dataGridView1_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
                 if (!dataGridView1.Rows[e.RowIndex].Selected)
                 {
-                    dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightGray;
+                   // dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightGray;
                 }
             }
         }
@@ -211,7 +214,7 @@ namespace Login
             {
                 if (!dataGridView1.Rows[e.RowIndex].Selected)
                 {
-                    dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+                   // dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.WhiteSmoke;
                 }
             }
         }

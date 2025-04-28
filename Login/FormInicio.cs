@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Login.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,5 +27,13 @@ namespace Login
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        
     }
 }

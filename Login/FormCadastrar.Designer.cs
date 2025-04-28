@@ -28,30 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtSobrenome = new System.Windows.Forms.TextBox();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
+            this.DNascimento = new System.Windows.Forms.DateTimePicker();
+            this.pbFuncionario = new System.Windows.Forms.PictureBox();
             this.btnFoto = new System.Windows.Forms.Button();
             this.rBtnMasc = new System.Windows.Forms.RadioButton();
             this.rBtnFem = new System.Windows.Forms.RadioButton();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtTel = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnCadFunc = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView_funcionarios = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFuncionario)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_funcionarios)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -115,51 +116,52 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Endereço:";
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox1.Location = new System.Drawing.Point(182, 21);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(172, 28);
-            this.textBox1.TabIndex = 12;
+            this.txtNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtNome.Location = new System.Drawing.Point(182, 21);
+            this.txtNome.Multiline = true;
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(172, 28);
+            this.txtNome.TabIndex = 12;
             // 
-            // textBox2
+            // txtSobrenome
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox2.Location = new System.Drawing.Point(465, 21);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(172, 28);
-            this.textBox2.TabIndex = 13;
+            this.txtSobrenome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtSobrenome.Location = new System.Drawing.Point(465, 21);
+            this.txtSobrenome.Multiline = true;
+            this.txtSobrenome.Name = "txtSobrenome";
+            this.txtSobrenome.Size = new System.Drawing.Size(172, 28);
+            this.txtSobrenome.TabIndex = 13;
             // 
-            // textBox3
+            // txtEndereco
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox3.Location = new System.Drawing.Point(180, 160);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(475, 53);
-            this.textBox3.TabIndex = 14;
+            this.txtEndereco.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtEndereco.Location = new System.Drawing.Point(180, 160);
+            this.txtEndereco.Multiline = true;
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(475, 53);
+            this.txtEndereco.TabIndex = 14;
             // 
-            // dateTimePicker1
+            // DNascimento
             // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(182, 90);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(257, 25);
-            this.dateTimePicker1.TabIndex = 15;
+            this.DNascimento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.DNascimento.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DNascimento.Location = new System.Drawing.Point(182, 90);
+            this.DNascimento.Name = "DNascimento";
+            this.DNascimento.Size = new System.Drawing.Size(257, 25);
+            this.DNascimento.TabIndex = 15;
             // 
-            // pictureBox1
+            // pbFuncionario
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(958, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(133, 123);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
+            this.pbFuncionario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbFuncionario.BackColor = System.Drawing.Color.White;
+            this.pbFuncionario.Location = new System.Drawing.Point(958, 14);
+            this.pbFuncionario.Name = "pbFuncionario";
+            this.pbFuncionario.Size = new System.Drawing.Size(133, 123);
+            this.pbFuncionario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbFuncionario.TabIndex = 16;
+            this.pbFuncionario.TabStop = false;
             // 
             // btnFoto
             // 
@@ -175,6 +177,7 @@
             this.btnFoto.TabIndex = 17;
             this.btnFoto.Text = "CARREGAR";
             this.btnFoto.UseVisualStyleBackColor = false;
+            this.btnFoto.Click += new System.EventHandler(this.btnFoto_Click);
             // 
             // rBtnMasc
             // 
@@ -204,14 +207,14 @@
             this.rBtnFem.Text = "Feminino";
             this.rBtnFem.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // txtTel
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Location = new System.Drawing.Point(743, 23);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(185, 28);
-            this.textBox4.TabIndex = 21;
+            this.txtTel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTel.Location = new System.Drawing.Point(743, 23);
+            this.txtTel.Multiline = true;
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(185, 28);
+            this.txtTel.TabIndex = 21;
             // 
             // label6
             // 
@@ -239,6 +242,7 @@
             this.btnCadFunc.TabIndex = 22;
             this.btnCadFunc.Text = "CADASTRAR";
             this.btnCadFunc.UseVisualStyleBackColor = false;
+            this.btnCadFunc.Click += new System.EventHandler(this.btnCadFunc_Click);
             // 
             // btnLimpar
             // 
@@ -254,51 +258,60 @@
             this.btnLimpar.TabIndex = 23;
             this.btnLimpar.Text = "LIMPAR";
             this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.dataGridView_funcionarios);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1138, 516);
             this.panel1.TabIndex = 25;
             // 
+            // dataGridView_funcionarios
+            // 
+            this.dataGridView_funcionarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_funcionarios.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView_funcionarios.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView_funcionarios.Name = "dataGridView_funcionarios";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_funcionarios.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView_funcionarios.Size = new System.Drawing.Size(1138, 516);
+            this.dataGridView_funcionarios.TabIndex = 0;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.pbFuncionario);
             this.panel2.Controls.Add(this.btnLimpar);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.btnCadFunc);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.txtTel);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.rBtnFem);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.rBtnMasc);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtNome);
             this.panel2.Controls.Add(this.btnFoto);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.txtSobrenome);
+            this.panel2.Controls.Add(this.txtEndereco);
+            this.panel2.Controls.Add(this.DNascimento);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 212);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1138, 304);
             this.panel2.TabIndex = 26;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1138, 516);
-            this.dataGridView1.TabIndex = 0;
             // 
             // FormCadastrar
             // 
@@ -311,11 +324,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCadastrar";
             this.Text = "FormCadastrar";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.FormCadastrar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbFuncionario)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_funcionarios)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -326,20 +340,20 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtSobrenome;
+        private System.Windows.Forms.TextBox txtEndereco;
+        private System.Windows.Forms.DateTimePicker DNascimento;
+        private System.Windows.Forms.PictureBox pbFuncionario;
         private System.Windows.Forms.Button btnFoto;
         private System.Windows.Forms.RadioButton rBtnMasc;
         private System.Windows.Forms.RadioButton rBtnFem;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtTel;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnCadFunc;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView_funcionarios;
     }
 }

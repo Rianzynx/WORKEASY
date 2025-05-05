@@ -25,7 +25,6 @@ namespace Login
                 return;
             }
 
-            this.Dock = DockStyle.Fill;
 
             DataTable dataTable = new DataTable();
             dataTable.Columns.Add("*", typeof(Image));

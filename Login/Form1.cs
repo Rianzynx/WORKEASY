@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,58 +13,113 @@ namespace Login
 {
     public partial class Form1: Form
     {
-
         public static Form1 Instance;
+        private bool isCollapsed;
+        private Form formularioAtual = null;
+        bool menuExpandido = false;
+        bool expandindoMenu = false;
+        bool recolhendoMenu = false;
+        int larguraExpandida = 220;
+        int larguraRecolhida = 95;
+
+
         public Form1()
         {
             InitializeComponent();
             Instance = this;
+
+            this.Click += new EventHandler(Form1_Click);
+            this.DoubleBuffered = true;
+            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            UpdateStyles();
         }
 
+      
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Chama o método para carregar o FormInicio assim que o Form1 for carregado
+
             CarregarFormInicio();
+            int minHeight = btnFunc.Bottom + 10;
+            menuExpandido = false;
+
+
+            panelMenu.MouseEnter += panelMenu_MouseEnter;
+            panelMenu.MouseLeave += panelMenu_MouseLeave;
+
+            btnIni.IconChar = FontAwesome.Sharp.IconChar.House;
+            btnSol.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
+            btnFunc.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
+            btnRelat.IconChar = FontAwesome.Sharp.IconChar.Pencil;
+            btnOp.IconChar = FontAwesome.Sharp.IconChar.Gears;
+
+
+            isCollapsed = true;
+
         }
+
+
+        private void Form1_Click(object sender, EventArgs e)
+        {
+            if (!panelMenuFunc.Bounds.Contains(PointToClient(Cursor.Position)) && panelMenuFunc.Visible)
+            {
+                panelMenuFunc.Visible = false; 
+            }
+        }
+
+
 
         private void CarregarFormInicio()
         {
-            // Cria uma instância do FormInicio
+
             FormInicio formInicio = new FormInicio();
 
-            // Define as propriedades para que o FormInicio ocupe o espaço todo no painel pSol
             formInicio.TopLevel = false;
             formInicio.FormBorderStyle = FormBorderStyle.None;
             formInicio.Dock = DockStyle.Fill;
 
-            // Limpa o painel pSol antes de adicionar o novo formulário
             pSol.Controls.Clear();
-
-            // Adiciona o FormInicio ao painel pSol
             pSol.Controls.Add(formInicio);
             formInicio.Dock = DockStyle.Fill;
 
-            // Exibe o FormInicio
             formInicio.Show();
-        }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
+            formularioAtual = formInicio;
 
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
+        private void panelMenu_MouseEnter(object sender, EventArgs e)
         {
-
+            if (!menuExpandido)
+            {
+                expandindoMenu = true;
+                recolhendoMenu = false;
+                timer1.Start();
+            }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void panelMenu_MouseLeave(object sender, EventArgs e)
         {
-            
+            if (menuExpandido && !panelMenu.Bounds.Contains(PointToClient(Cursor.Position)))
+            {
+                recolhendoMenu = true;
+                expandindoMenu = false;
+                timer1.Start();
+                isCollapsed = false;
+                timer2.Start();
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void btnSol_Click(object sender, EventArgs e)
         {
+
+            RecolherSubMenu();
+
+            if (formularioAtual is FormSolicitacao)
+            {
+                return;
+            }
+
             FormSolicitacao formSolicitacao = new FormSolicitacao();
 
             formSolicitacao.TopLevel = false;  
@@ -72,34 +128,28 @@ namespace Login
 
             pSol.Controls.Clear();  
             pSol.Controls.Add(formSolicitacao);  
-            formSolicitacao.Dock = DockStyle.Fill;
 
             formSolicitacao.Show();
+
+            formularioAtual = formSolicitacao;
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
 
 
         private void pSol_Paint(object sender, PaintEventArgs e)
-        {
-            pSol.Dock = DockStyle.Fill;
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
         private void btnIni_Click(object sender, EventArgs e)
         {
+            RecolherSubMenu();
+
+            if (formularioAtual is FormInicio)
+            {
+                return;
+            }
+
             FormInicio formInicio = new FormInicio();
 
             formInicio.TopLevel = false;
@@ -111,23 +161,83 @@ namespace Login
             formInicio.Dock = DockStyle.Fill;
 
             formInicio.Show();
+
+            formularioAtual = formInicio;
         }
+
+
 
         private void btnFunc_Click(object sender, EventArgs e)
         {
-            FormFuncionario formFuncionario = new FormFuncionario();
 
-            formFuncionario.TopLevel = false;
-            formFuncionario.FormBorderStyle = FormBorderStyle.None;
-            formFuncionario.Dock = DockStyle.Fill;
-
-            pSol.Controls.Clear();
-            pSol.Controls.Add(formFuncionario);
-            formFuncionario.Dock = DockStyle.Fill;
-
-            formFuncionario.Show();
+            if (panelMenuFunc.Visible && panelMenuFunc.Height > 0)
+            {
+                isCollapsed = false; 
+                timer2.Start();
+            }
+            else
+            {
+                panelMenuFunc.Visible = true;
+                isCollapsed = true; 
+                timer2.Start();
+            }
         }
 
+        private void btnGeralFunc_Click(object sender, EventArgs e)
+        {
+            if (!(formularioAtual is FormFuncionario))
+            {
+                FormFuncionario formFuncionario = new FormFuncionario();
+
+                formFuncionario.TopLevel = false;
+                formFuncionario.FormBorderStyle = FormBorderStyle.None;
+                formFuncionario.Dock = DockStyle.Fill;
+
+                pSol.Controls.Clear();
+                pSol.Controls.Add(formFuncionario);
+                formFuncionario.Show();
+
+                formularioAtual = formFuncionario;
+            }
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            int step = 10;
+            int minHeight = 0;
+            int maxHeight = 180;
+
+            if (isCollapsed)
+            {
+                panelMenuFunc.Height += step;
+                if (panelMenuFunc.Height >= maxHeight)
+                {
+                    panelMenuFunc.Height = maxHeight;
+                    isCollapsed = false;  
+                    timer2.Stop();  
+                }
+            }
+            else
+            {
+                panelMenuFunc.Height -= step;
+                if (panelMenuFunc.Height <= minHeight)
+                {
+                    panelMenuFunc.Height = minHeight;
+                    panelMenuFunc.Visible = false;  
+                    timer2.Stop();  
+                }
+            }
+        }
+
+
+        private void RecolherSubMenu()
+        {
+            if (panelMenuFunc.Visible)
+            {
+                isCollapsed = false;
+                timer2.Start(); 
+            }
+        }
 
         private void btnLogout(object sender, EventArgs e)
         {
@@ -144,73 +254,109 @@ namespace Login
             }
         }
 
-        private bool estaComLua = true;
-        private void btnSolClick(object sender, EventArgs e)
+ 
+
+        private void btnRelat_Click(object sender, EventArgs e)
         {
-            if (estaComLua)
-            {
-                // Tema Escuro
-                btnSol.Image = Properties.Resources.iconSol;
-                this.BackColor = Color.FromArgb(30, 30, 30); // Fundo do formulário
-                panelTop.BackColor = Color.FromArgb(45, 45, 48);
-                lblNome.ForeColor = Color.White;
-                if (Form1.Instance != null)
-                {
-                    Form1.Instance.PanelMenu.BackColor = Color.FromArgb(50, 50, 50);// muda o panel do Form1 já aberto
-                }
-                panelTop.ForeColor = Color.White; // Texto do menu
-                foreach (Control ctrl in this.Controls)
-                {
-                    if (ctrl is Button btn)
-                    {
-                        btn.BackColor = Color.FromArgb(50, 50, 50);
-                        btn.ForeColor = Color.White;
-                    }
-                    if (ctrl is Label lbl)
-                    {
-                        lbl.ForeColor = Color.White;
-                    }
-                }
-
-                estaComLua = false;
-            }
-            else
-            {
-                // Tema Claro
-                btnSol.Image = Properties.Resources.iconLua;
-                this.BackColor = Color.White;
-                panelTop.BackColor = Color.White;
-                lblNome.ForeColor = Color.DarkGray;
-
-                if (Form1.Instance != null)
-                {
-                    Form1.Instance.PanelMenu.BackColor = Color.White;
-                }
-
-                panelTop.ForeColor = Color.Black;
-
-                foreach (Control ctrl in this.Controls)
-                {
-                    if (ctrl is Button btn)
-                    {
-                        btn.BackColor = Color.White;
-                        btn.ForeColor = Color.Black;
-                    }
-                    if (ctrl is Label lbl)
-                    {
-                        lbl.ForeColor = Color.Black;
-                    }
-                }
-
-                estaComLua = true;
-            }
-
-            btnSol.ImageAlign = ContentAlignment.MiddleCenter;
+            RecolherSubMenu();
         }
 
-        public Panel PanelMenu
+   
+
+
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            get { return panelMenu; }
+            int step = 20;
+
+            if (expandindoMenu)
+            {
+                panelMenu.Width += step;
+                if (panelMenu.Width >= larguraExpandida)
+                {
+                    panelMenu.Width = larguraExpandida;
+                    expandindoMenu = false;
+                    menuExpandido = true;
+
+                    AtualizarBotoesExpandido();
+                }
+            }
+            else if (recolhendoMenu)
+            {
+                panelMenu.Width -= step;
+                if (panelMenu.Width <= larguraRecolhida)
+                {
+                    panelMenu.Width = larguraRecolhida;
+                    recolhendoMenu = false;
+                    menuExpandido = false;
+
+                    AtualizarBotoesRecolhido();
+                }
+            }
         }
+
+
+        private void AtualizarBotoesExpandido()
+        {
+            panelMenuFunc.Width = 170;
+            btnIni.Width = btnSol.Width = btnFunc.Width = btnRelat.Width = btnOp.Width = 170;
+
+            btnIni.Text = "Início";
+            btnSol.Text = "Solicitações";
+            btnFunc.Text = "Funcionários";
+            btnRelat.Text = "Relatórios";
+            btnOp.Text = "Configurações";
+
+            ConfigurarAlinhamentoBotoes(true);
+        }
+
+        private void AtualizarBotoesRecolhido()
+        {
+            btnIni.Width = btnSol.Width = btnFunc.Width = btnRelat.Width = btnOp.Width = 50;
+
+            btnIni.Text = btnSol.Text = btnFunc.Text = btnRelat.Text = btnOp.Text = "";
+
+            ConfigurarAlinhamentoBotoes(false);
+        }
+
+        private void ConfigurarAlinhamentoBotoes(bool expandido)
+        {
+            ContentAlignment align = expandido ? ContentAlignment.MiddleRight : ContentAlignment.MiddleCenter;
+            ContentAlignment imgAlign = expandido ? ContentAlignment.MiddleLeft : ContentAlignment.MiddleCenter;
+            TextImageRelation rel = expandido ? TextImageRelation.ImageBeforeText : TextImageRelation.Overlay;
+
+            foreach (var btn in new[] { btnIni, btnSol, btnFunc, btnRelat, btnOp })
+            {
+                btn.TextAlign = align;
+                btn.ImageAlign = imgAlign;
+                btn.TextImageRelation = rel;
+            }
+        }
+
+
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            FormCadastrar formCadastrar = new FormCadastrar();
+
+            formCadastrar.TopLevel = false;
+            formCadastrar.FormBorderStyle = FormBorderStyle.None;
+            formCadastrar.Dock = DockStyle.Fill;
+
+            pSol.Controls.Clear(); 
+            pSol.Controls.Add(formCadastrar); 
+
+            formCadastrar.Show();
+
+            formularioAtual = formCadastrar;
+            panelMenuFunc.Visible = false;
+        }
+
+    
+        private void panelMenu_Click(object sender, EventArgs e)
+        {
+            RecolherSubMenu();
+        }
+
+       
     }
 }

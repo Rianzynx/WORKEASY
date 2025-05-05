@@ -195,9 +195,9 @@ namespace Login
 
             int btnWidth = 20;
             int spacing = 5;
-            int total = 3 * btnWidth + 2 * spacing; // Largura total considerando os ícones e espaçamento
-            int startX = e.CellBounds.Left + (e.CellBounds.Width - total) / 2; // Centraliza horizontalmente
-            int startY = e.CellBounds.Top + (e.CellBounds.Height - btnWidth) / 2; // Centraliza verticalmente
+            int total = 3 * btnWidth + 2 * spacing; 
+            int startX = e.CellBounds.Left + (e.CellBounds.Width - total) / 2; 
+            int startY = e.CellBounds.Top + (e.CellBounds.Height - btnWidth) / 2; 
 
             for (int i = 0; i < 3; i++)
             {
@@ -205,15 +205,15 @@ namespace Login
 
                 if (i == 0)
                 {
-                    e.Graphics.DrawImage(Resources.iconEditarFunc, rect);  // Desenha o ícone de editar
+                    e.Graphics.DrawImage(Resources.iconEditarFunc, rect); 
                 }
                 else if (i == 1)
                 {
-                    e.Graphics.DrawImage(Resources.iconExcluir, rect);  // Desenha o ícone de excluir
+                    e.Graphics.DrawImage(Resources.iconExcluir, rect);  
                 }
                 else if (i == 2)
                 {
-                    e.Graphics.DrawImage(Resources.iconVisualizar, rect);  // Desenha o ícone de visualizar
+                    e.Graphics.DrawImage(Resources.iconVisualizar, rect); 
                 }
             }
         }
@@ -243,13 +243,7 @@ namespace Login
 
         private void FormFuncionario_Load(object sender, EventArgs e)
         {
-            panel3.Anchor = AnchorStyles.Top | AnchorStyles.Left;
-            panel3.Height = pDados.Height;
-            panel3.Location = new System.Drawing.Point(
-                (pDados.Width - panel2.Width - panel2.Width) / 2,  
-                0
-            );
-            pDados.Controls.Add(panel2);
+
         }
         private void label1_Click(object sender, EventArgs e)
         {
@@ -293,21 +287,7 @@ namespace Login
 
         private void btnCadastro_Click(object sender, EventArgs e)
         {
-            FormCadastrar formCadastrar = new FormCadastrar();
-
-            formCadastrar.TopLevel = false;
-            formCadastrar.FormBorderStyle = FormBorderStyle.None;
-            formCadastrar.Dock = DockStyle.Fill;
-
-            // Limpa os controles anteriores
-            pDados.Controls.Clear();
-
-            // Adiciona o novo formulário
-            pDados.Controls.Add(formCadastrar);
-            formCadastrar.Dock = DockStyle.Fill;
-
-            // Exibe o formulário
-            formCadastrar.Show();
+           
         }
     }
 }

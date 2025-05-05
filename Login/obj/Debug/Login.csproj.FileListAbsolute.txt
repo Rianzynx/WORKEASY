@@ -156,3 +156,4 @@ C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.csproj.CoreCompile
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.csproj.Up2Date
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.exe
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.pdb
+C:\Users\Rian\Documents\GitHub\WORKEASY\Login\bin\Debug\FontAwesome.Sharp.dll

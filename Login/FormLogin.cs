@@ -79,15 +79,14 @@ namespace Login
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            if (txtPass.UseSystemPasswordChar) 
+            if (txtPass.UseSystemPasswordChar)
             {
-                pictureBox5.Image = Image.FromFile("C:/Users/Rian/Desktop/Teste/passNotHide.png");
+                pictureBox5.Image = Properties.Resources.passNotHide;
                 txtPass.UseSystemPasswordChar = false;
-
             }
-            else 
+            else
             {
-                pictureBox5.Image = Image.FromFile("C:/Users/Rian/Desktop/Teste/passHide.png");
+                pictureBox5.Image = Properties.Resources.passHide;
                 txtPass.UseSystemPasswordChar = true;
             }
         }

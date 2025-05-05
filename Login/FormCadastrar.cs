@@ -40,7 +40,6 @@ namespace Login
             }
             else if (verify())
             {
-                // Chama o método para inserir no banco
                 bool insert = funcionario.insertFuncionario(fname, lname, tel, dataNascimento, genero, endereco, foto);
 
                 if (insert)
@@ -118,6 +117,10 @@ namespace Login
 
                 
                 dataGridView_funcionarios.RowTemplate.Height = 40;
+                dataGridView_funcionarios.RowHeadersVisible = false;
+                dataGridView_funcionarios.AllowUserToAddRows = false;
+                dataGridView_funcionarios.Dock = DockStyle.Fill;
+
                 dataGridView_funcionarios.AllowUserToResizeColumns = false;
                 dataGridView_funcionarios.AllowUserToResizeRows = false;
 
@@ -132,7 +135,6 @@ namespace Login
 
                 foreach (DataGridViewColumn col in dataGridView_funcionarios.Columns)
                 {
-                    // Ignora a coluna de ID (primeira) e a última coluna vazia, se houver
                     if (col.Index == dataGridView_funcionarios.Columns.Count - 1)
                     {
                         col.Visible = false;
@@ -143,7 +145,6 @@ namespace Login
                     }
                 }
 
-                // Ajuste adicional para garantir que a última coluna (se estiver vazia) não seja exibida
                 if (dataGridView_funcionarios.Columns.Count > 0)
                 {
                     DataGridViewColumn lastColumn = dataGridView_funcionarios.Columns[dataGridView_funcionarios.Columns.Count - 1];
@@ -155,6 +156,8 @@ namespace Login
 
             }
         }
+
+            
 
     }
 }

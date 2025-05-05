@@ -139,20 +139,17 @@
   <data name="email1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\email1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fundogif1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fundogif2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="relogioIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\relogioIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconEditar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconEditar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FundoInicial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FundoInicial.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconExcluir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconExcluir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FundoInicial" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FundoInicial.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconConfiguracao1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconConfiguracao1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconSol" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconSol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,6 +163,12 @@
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FUNDOGIF (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FUNDOGIF (2).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconConfiguracao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconConfiguracao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="passNotHide" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\passNotHide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -177,6 +180,9 @@
   </data>
   <data name="userIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\userIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconSolicitacaoWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconSolicitacaoWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WORKEASY" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WORKEASY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,11 +211,14 @@
   <data name="email" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\email2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconConfiguracao" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconConfiguracao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="trabHomemIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trabHomemIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fundogif" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fundogif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconHomeWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconHomeWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="moedaicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\moedaicon3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,17 +229,14 @@
   <data name="cadastroIcon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cadastroIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconVisualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconVisualizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fundogif1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fundogif2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="relogioIcon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\relogioIcon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="passHide" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\passHide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconHome2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconHome2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconConfiguracaoWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconConfiguracaoWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconVisualizar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconVisualizar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,14 +247,17 @@
   <data name="fundoIni" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fundoIni.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconConfiguracao1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconConfiguracao1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="passHide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\passHide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WORKEASY1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WORKEASY2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconRelatorio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconRelatorio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="setaDireita" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setaDireita.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconEditar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconEditar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconFuncionarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconFuncionarios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,20 +265,29 @@
   <data name="iconHome1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconHome1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="iconVisualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconVisualizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="robogif" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\robogif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconNotificacao" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconNotificacao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="logoTeste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoTeste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iconLupa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconLupa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="trabHomemIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trabHomemIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconHome2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconHome2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconEditarFunc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconEditarFunc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconRelatorioWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconRelatorioWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fundoInic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fundoInic.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -277,10 +295,16 @@
   <data name="botao-de-inicio1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\botao-de-inicio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="iconRelatorio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconRelatorio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="alertaIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\alertaIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FUNDOGIF (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FUNDOGIF (2).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconFuncionariosWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconFuncionariosWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fundoRh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fundoRh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -9,17 +9,15 @@ namespace Login
 {
    public class DBconnect
     {
-        // Defina a string de conexão
-        public static string connectionString = @"Server=localhost\SQLEXPRESS;Database=GestaoRH;Trusted_Connection=True;";
 
-        // Método para criar a conexão com o banco de dados
+        public static string connectionString = @"Server=;Database=GestaoRH;Trusted_Connection=True;";
+
         public static SqlConnection GetConnection()
         {
             SqlConnection connection = new SqlConnection(connectionString);
             return connection;
         }
 
-        // Método para abrir a conexão
         public static void OpenConnection(SqlConnection connection)
         {
             try
@@ -35,7 +33,6 @@ namespace Login
             }
         }
 
-        // Método para fechar a conexão
         public static void CloseConnection(SqlConnection connection)
         {
             try

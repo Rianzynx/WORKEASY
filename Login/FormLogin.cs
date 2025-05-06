@@ -81,12 +81,12 @@ namespace Login
         {
             if (txtPass.UseSystemPasswordChar)
             {
-                pictureBox5.Image = Properties.Resources.passNotHide;
+                pictureBox5.Image = Properties.Resources.passHide;
                 txtPass.UseSystemPasswordChar = false;
             }
             else
             {
-                pictureBox5.Image = Properties.Resources.passHide;
+                pictureBox5.Image = Properties.Resources.passNotHide;
                 txtPass.UseSystemPasswordChar = true;
             }
         }
@@ -103,7 +103,6 @@ namespace Login
             {
                 txtPass.Text = "";
                 txtPass.ForeColor = Color.LightGray;
-                txtPass.UseSystemPasswordChar = false;
             }
 
         }
@@ -114,7 +113,6 @@ namespace Login
             {
                 txtPass.Text = "SENHA";
                 txtPass.ForeColor = Color.LightGray;
-                txtPass.UseSystemPasswordChar = true;
             }
         }
 
@@ -139,14 +137,8 @@ namespace Login
             }
         }
 
-        private void txtUser_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
 
-        private void label1_Click_2(object sender, EventArgs e)
-        {
 
-        }
+       
     }
 }

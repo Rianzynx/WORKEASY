@@ -19,7 +19,7 @@ namespace Login
         bool menuExpandido = false;
         bool expandindoMenu = false;
         bool recolhendoMenu = false;
-        int larguraExpandida = 220;
+        int larguraExpandida = 230;
         int larguraRecolhida = 95;
 
 
@@ -50,7 +50,7 @@ namespace Login
             btnSol.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
             btnFunc.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
             btnRelat.IconChar = FontAwesome.Sharp.IconChar.Pencil;
-            btnOp.IconChar = FontAwesome.Sharp.IconChar.Gears;
+            btnOp.IconChar = FontAwesome.Sharp.IconChar.Cog;
 
 
             isCollapsed = true;
@@ -266,6 +266,7 @@ namespace Login
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            panelMenu.BringToFront();
             int step = 20;
 
             if (expandindoMenu)
@@ -311,7 +312,7 @@ namespace Login
 
         private void AtualizarBotoesRecolhido()
         {
-            btnIni.Width = btnSol.Width = btnFunc.Width = btnRelat.Width = btnOp.Width = 50;
+            btnIni.Width = btnSol.Width = btnFunc.Width = btnRelat.Width = btnOp.Width = 35;
 
             btnIni.Text = btnSol.Text = btnFunc.Text = btnRelat.Text = btnOp.Text = "";
 
@@ -356,7 +357,5 @@ namespace Login
         {
             RecolherSubMenu();
         }
-
-       
     }
 }

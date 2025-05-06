@@ -129,21 +129,15 @@ namespace Login
                 {
                     if (col is DataGridViewImageColumn)
                     {
+                        col.Width = 80;
                         ((DataGridViewImageColumn)col).ImageLayout = DataGridViewImageCellLayout.Zoom;
-                    }
-                }
-
-                foreach (DataGridViewColumn col in dataGridView_funcionarios.Columns)
-                {
-                    if (col.Index == dataGridView_funcionarios.Columns.Count - 1)
-                    {
-                        col.Visible = false;
-                    }
-                    else
+                    } else
                     {
                         col.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                     }
                 }
+
+      
 
                 if (dataGridView_funcionarios.Columns.Count > 0)
                 {

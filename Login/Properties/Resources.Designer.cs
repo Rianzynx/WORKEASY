@@ -223,56 +223,6 @@ namespace Login.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap fundoIni {
-            get {
-                object obj = ResourceManager.GetObject("fundoIni", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap fundoInic {
-            get {
-                object obj = ResourceManager.GetObject("fundoInic", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap fundoInic1 {
-            get {
-                object obj = ResourceManager.GetObject("fundoInic1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap FundoInicial {
-            get {
-                object obj = ResourceManager.GetObject("FundoInicial", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap FundoInicial1 {
-            get {
-                object obj = ResourceManager.GetObject("FundoInicial1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap fundoMenu {
             get {
                 object obj = ResourceManager.GetObject("fundoMenu", resourceCulture);
@@ -286,6 +236,16 @@ namespace Login.Properties {
         internal static System.Drawing.Bitmap fundoRh {
             get {
                 object obj = ResourceManager.GetObject("fundoRh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fundoRh1 {
+            get {
+                object obj = ResourceManager.GetObject("fundoRh1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

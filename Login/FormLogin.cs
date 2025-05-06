@@ -111,7 +111,7 @@ namespace Login
         {
             if (txtPass.Text == "")
             {
-                txtPass.Text = "SENHA";
+                txtPass.Text = "";
                 txtPass.ForeColor = Color.LightGray;
             }
         }

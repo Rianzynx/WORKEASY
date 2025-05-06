@@ -34,29 +34,29 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.lblNome = new System.Windows.Forms.Label();
             this.panelTop = new System.Windows.Forms.Panel();
-            this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.panelMenuFunc = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnGeralFunc = new Guna.UI2.WinForms.Guna2Button();
-            this.btnCadastrar = new Guna.UI2.WinForms.Guna2Button();
-            this.btnEditar = new Guna.UI2.WinForms.Guna2Button();
-            this.btnExcluir = new Guna.UI2.WinForms.Guna2Button();
             this.btnTema = new FontAwesome.Sharp.IconButton();
             this.btnConfigUser = new FontAwesome.Sharp.IconButton();
             this.pbUser = new System.Windows.Forms.PictureBox();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.panelMenuFunc = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnExcluir = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEditar = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCadastrar = new Guna.UI2.WinForms.Guna2Button();
+            this.btnGeralFunc = new Guna.UI2.WinForms.Guna2Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnOp = new FontAwesome.Sharp.IconButton();
             this.btnRelat = new FontAwesome.Sharp.IconButton();
             this.btnFunc = new FontAwesome.Sharp.IconButton();
             this.btnSol = new FontAwesome.Sharp.IconButton();
             this.btnIni = new FontAwesome.Sharp.IconButton();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.panelTop.SuspendLayout();
-            this.panelMenu.SuspendLayout();
-            this.panelLogo.SuspendLayout();
-            this.panelMenuFunc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
+            this.panelMenu.SuspendLayout();
+            this.panelMenuFunc.SuspendLayout();
+            this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,10 +94,60 @@
             this.panelTop.Size = new System.Drawing.Size(1271, 47);
             this.panelTop.TabIndex = 5;
             // 
+            // btnTema
+            // 
+            this.btnTema.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTema.BackColor = System.Drawing.Color.Transparent;
+            this.btnTema.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTema.FlatAppearance.BorderSize = 0;
+            this.btnTema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTema.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTema.ForeColor = System.Drawing.Color.White;
+            this.btnTema.IconChar = FontAwesome.Sharp.IconChar.Moon;
+            this.btnTema.IconColor = System.Drawing.Color.White;
+            this.btnTema.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnTema.IconSize = 35;
+            this.btnTema.Location = new System.Drawing.Point(1047, 9);
+            this.btnTema.Name = "btnTema";
+            this.btnTema.Size = new System.Drawing.Size(30, 30);
+            this.btnTema.TabIndex = 10;
+            this.btnTema.UseVisualStyleBackColor = false;
+            // 
+            // btnConfigUser
+            // 
+            this.btnConfigUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnConfigUser.BackColor = System.Drawing.Color.Transparent;
+            this.btnConfigUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConfigUser.FlatAppearance.BorderSize = 0;
+            this.btnConfigUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfigUser.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfigUser.ForeColor = System.Drawing.Color.White;
+            this.btnConfigUser.IconChar = FontAwesome.Sharp.IconChar.Cog;
+            this.btnConfigUser.IconColor = System.Drawing.Color.White;
+            this.btnConfigUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnConfigUser.IconSize = 35;
+            this.btnConfigUser.Location = new System.Drawing.Point(1088, 9);
+            this.btnConfigUser.Name = "btnConfigUser";
+            this.btnConfigUser.Size = new System.Drawing.Size(30, 30);
+            this.btnConfigUser.TabIndex = 8;
+            this.btnConfigUser.UseVisualStyleBackColor = false;
+            // 
+            // pbUser
+            // 
+            this.pbUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbUser.BackColor = System.Drawing.Color.Transparent;
+            this.pbUser.Image = ((System.Drawing.Image)(resources.GetObject("pbUser.Image")));
+            this.pbUser.Location = new System.Drawing.Point(1133, 3);
+            this.pbUser.Name = "pbUser";
+            this.pbUser.Size = new System.Drawing.Size(45, 39);
+            this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbUser.TabIndex = 1;
+            this.pbUser.TabStop = false;
+            // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(17)))), ((int)(((byte)(43)))));
-            this.panelMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelMenu.BackgroundImage = global::Login.Properties.Resources.fundoMenu;
             this.panelMenu.Controls.Add(this.panelMenuFunc);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Controls.Add(this.btnOp);
@@ -112,26 +162,6 @@
             this.panelMenu.TabIndex = 0;
             this.panelMenu.Click += new System.EventHandler(this.panelMenu_Click);
             // 
-            // panelLogo
-            // 
-            this.panelLogo.BackColor = System.Drawing.Color.Transparent;
-            this.panelLogo.Controls.Add(this.pictureBox1);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(95, 100);
-            this.panelLogo.TabIndex = 1;
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 10;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // timer2
-            // 
-            this.timer2.Interval = 15;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
             // panelMenuFunc
             // 
             this.panelMenuFunc.Controls.Add(this.btnExcluir);
@@ -143,27 +173,47 @@
             this.panelMenuFunc.Size = new System.Drawing.Size(70, 0);
             this.panelMenuFunc.TabIndex = 0;
             // 
-            // btnGeralFunc
+            // btnExcluir
             // 
-            this.btnGeralFunc.BorderColor = System.Drawing.Color.White;
-            this.btnGeralFunc.BorderThickness = 1;
-            this.btnGeralFunc.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGeralFunc.CustomBorderColor = System.Drawing.Color.LightSeaGreen;
-            this.btnGeralFunc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnGeralFunc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnGeralFunc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnGeralFunc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnGeralFunc.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnGeralFunc.FillColor = System.Drawing.Color.Transparent;
-            this.btnGeralFunc.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGeralFunc.ForeColor = System.Drawing.Color.White;
-            this.btnGeralFunc.HoverState.BorderColor = System.Drawing.Color.Cyan;
-            this.btnGeralFunc.Location = new System.Drawing.Point(0, 0);
-            this.btnGeralFunc.Name = "btnGeralFunc";
-            this.btnGeralFunc.Size = new System.Drawing.Size(70, 45);
-            this.btnGeralFunc.TabIndex = 0;
-            this.btnGeralFunc.Text = "VISÂO GERAL";
-            this.btnGeralFunc.Click += new System.EventHandler(this.btnGeralFunc_Click);
+            this.btnExcluir.BorderColor = System.Drawing.Color.White;
+            this.btnExcluir.BorderThickness = 1;
+            this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExcluir.CustomBorderColor = System.Drawing.Color.LightSeaGreen;
+            this.btnExcluir.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExcluir.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExcluir.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExcluir.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExcluir.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExcluir.FillColor = System.Drawing.Color.Transparent;
+            this.btnExcluir.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.ForeColor = System.Drawing.Color.White;
+            this.btnExcluir.HoverState.BorderColor = System.Drawing.Color.Cyan;
+            this.btnExcluir.Location = new System.Drawing.Point(0, 135);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(70, 45);
+            this.btnExcluir.TabIndex = 3;
+            this.btnExcluir.Text = "EXCLUIR";
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.BorderColor = System.Drawing.Color.White;
+            this.btnEditar.BorderThickness = 1;
+            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditar.CustomBorderColor = System.Drawing.Color.LightSeaGreen;
+            this.btnEditar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEditar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEditar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEditar.FillColor = System.Drawing.Color.Transparent;
+            this.btnEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.Color.White;
+            this.btnEditar.HoverState.BorderColor = System.Drawing.Color.Cyan;
+            this.btnEditar.Location = new System.Drawing.Point(0, 90);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(70, 45);
+            this.btnEditar.TabIndex = 2;
+            this.btnEditar.Text = "EDITAR";
             // 
             // btnCadastrar
             // 
@@ -187,96 +237,37 @@
             this.btnCadastrar.Text = "CADASTRAR";
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // btnEditar
+            // btnGeralFunc
             // 
-            this.btnEditar.BorderColor = System.Drawing.Color.White;
-            this.btnEditar.BorderThickness = 1;
-            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditar.CustomBorderColor = System.Drawing.Color.LightSeaGreen;
-            this.btnEditar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEditar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEditar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEditar.FillColor = System.Drawing.Color.Transparent;
-            this.btnEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.ForeColor = System.Drawing.Color.White;
-            this.btnEditar.HoverState.BorderColor = System.Drawing.Color.Cyan;
-            this.btnEditar.Location = new System.Drawing.Point(0, 90);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(70, 45);
-            this.btnEditar.TabIndex = 2;
-            this.btnEditar.Text = "EDITAR";
+            this.btnGeralFunc.BorderColor = System.Drawing.Color.White;
+            this.btnGeralFunc.BorderThickness = 1;
+            this.btnGeralFunc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGeralFunc.CustomBorderColor = System.Drawing.Color.LightSeaGreen;
+            this.btnGeralFunc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGeralFunc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGeralFunc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGeralFunc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGeralFunc.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGeralFunc.FillColor = System.Drawing.Color.Transparent;
+            this.btnGeralFunc.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGeralFunc.ForeColor = System.Drawing.Color.White;
+            this.btnGeralFunc.HoverState.BorderColor = System.Drawing.Color.Cyan;
+            this.btnGeralFunc.Location = new System.Drawing.Point(0, 0);
+            this.btnGeralFunc.Name = "btnGeralFunc";
+            this.btnGeralFunc.Size = new System.Drawing.Size(70, 45);
+            this.btnGeralFunc.TabIndex = 0;
+            this.btnGeralFunc.Text = "VISÂO GERAL";
+            this.btnGeralFunc.Click += new System.EventHandler(this.btnGeralFunc_Click);
             // 
-            // btnExcluir
+            // panelLogo
             // 
-            this.btnExcluir.BorderColor = System.Drawing.Color.White;
-            this.btnExcluir.BorderThickness = 1;
-            this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExcluir.CustomBorderColor = System.Drawing.Color.LightSeaGreen;
-            this.btnExcluir.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnExcluir.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnExcluir.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExcluir.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnExcluir.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnExcluir.FillColor = System.Drawing.Color.Transparent;
-            this.btnExcluir.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.ForeColor = System.Drawing.Color.White;
-            this.btnExcluir.HoverState.BorderColor = System.Drawing.Color.Cyan;
-            this.btnExcluir.Location = new System.Drawing.Point(0, 135);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(70, 45);
-            this.btnExcluir.TabIndex = 3;
-            this.btnExcluir.Text = "EXCLUIR";
-            // 
-            // btnTema
-            // 
-            this.btnTema.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTema.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(23)))), ((int)(((byte)(56)))));
-            this.btnTema.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTema.FlatAppearance.BorderSize = 0;
-            this.btnTema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTema.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTema.ForeColor = System.Drawing.Color.White;
-            this.btnTema.IconChar = FontAwesome.Sharp.IconChar.Moon;
-            this.btnTema.IconColor = System.Drawing.Color.White;
-            this.btnTema.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnTema.IconSize = 35;
-            this.btnTema.Location = new System.Drawing.Point(1018, 3);
-            this.btnTema.Name = "btnTema";
-            this.btnTema.Size = new System.Drawing.Size(38, 41);
-            this.btnTema.TabIndex = 10;
-            this.btnTema.UseVisualStyleBackColor = false;
-            // 
-            // btnConfigUser
-            // 
-            this.btnConfigUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnConfigUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(23)))), ((int)(((byte)(56)))));
-            this.btnConfigUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnConfigUser.FlatAppearance.BorderSize = 0;
-            this.btnConfigUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfigUser.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfigUser.ForeColor = System.Drawing.Color.White;
-            this.btnConfigUser.IconChar = FontAwesome.Sharp.IconChar.Cog;
-            this.btnConfigUser.IconColor = System.Drawing.Color.White;
-            this.btnConfigUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnConfigUser.IconSize = 35;
-            this.btnConfigUser.Location = new System.Drawing.Point(1059, 3);
-            this.btnConfigUser.Name = "btnConfigUser";
-            this.btnConfigUser.Size = new System.Drawing.Size(38, 41);
-            this.btnConfigUser.TabIndex = 8;
-            this.btnConfigUser.UseVisualStyleBackColor = false;
-            // 
-            // pbUser
-            // 
-            this.pbUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbUser.Image = ((System.Drawing.Image)(resources.GetObject("pbUser.Image")));
-            this.pbUser.Location = new System.Drawing.Point(1133, 3);
-            this.pbUser.Name = "pbUser";
-            this.pbUser.Size = new System.Drawing.Size(45, 39);
-            this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbUser.TabIndex = 1;
-            this.pbUser.TabStop = false;
+            this.panelLogo.BackColor = System.Drawing.Color.Transparent;
+            this.panelLogo.Controls.Add(this.pictureBox1);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(95, 100);
+            this.panelLogo.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -296,6 +287,8 @@
             this.btnOp.BackColor = System.Drawing.Color.Transparent;
             this.btnOp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOp.FlatAppearance.BorderSize = 0;
+            this.btnOp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnOp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(41)))), ((int)(((byte)(78)))));
             this.btnOp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOp.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOp.ForeColor = System.Drawing.Color.White;
@@ -315,6 +308,8 @@
             this.btnRelat.BackColor = System.Drawing.Color.Transparent;
             this.btnRelat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRelat.FlatAppearance.BorderSize = 0;
+            this.btnRelat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnRelat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(41)))), ((int)(((byte)(78)))));
             this.btnRelat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRelat.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRelat.ForeColor = System.Drawing.Color.White;
@@ -335,6 +330,8 @@
             this.btnFunc.BackColor = System.Drawing.Color.Transparent;
             this.btnFunc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFunc.FlatAppearance.BorderSize = 0;
+            this.btnFunc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnFunc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(41)))), ((int)(((byte)(78)))));
             this.btnFunc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFunc.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFunc.ForeColor = System.Drawing.Color.White;
@@ -355,6 +352,8 @@
             this.btnSol.BackColor = System.Drawing.Color.Transparent;
             this.btnSol.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSol.FlatAppearance.BorderSize = 0;
+            this.btnSol.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSol.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(41)))), ((int)(((byte)(78)))));
             this.btnSol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSol.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSol.ForeColor = System.Drawing.Color.White;
@@ -375,6 +374,8 @@
             this.btnIni.BackColor = System.Drawing.Color.Transparent;
             this.btnIni.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIni.FlatAppearance.BorderSize = 0;
+            this.btnIni.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnIni.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(41)))), ((int)(((byte)(78)))));
             this.btnIni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIni.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIni.ForeColor = System.Drawing.Color.White;
@@ -390,6 +391,16 @@
             this.btnIni.UseVisualStyleBackColor = false;
             this.btnIni.Click += new System.EventHandler(this.btnIni_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 10;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 15;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -398,7 +409,7 @@
             this.Controls.Add(this.pSol);
             this.Controls.Add(this.panelTop);
             this.Controls.Add(this.panelMenu);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -406,10 +417,10 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
-            this.panelMenu.ResumeLayout(false);
-            this.panelLogo.ResumeLayout(false);
-            this.panelMenuFunc.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
+            this.panelMenu.ResumeLayout(false);
+            this.panelMenuFunc.ResumeLayout(false);
+            this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

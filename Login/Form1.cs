@@ -7,6 +7,7 @@ using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace Login
@@ -300,6 +301,7 @@ namespace Login
         {
             panelMenuFunc.Width = 170;
             btnIni.Width = btnSol.Width = btnFunc.Width = btnRelat.Width = btnOp.Width = 170;
+
 
             btnIni.Text = "Início";
             btnSol.Text = "Solicitações";

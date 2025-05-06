@@ -31,18 +31,18 @@
             this.components = new System.ComponentModel.Container();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtPass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtUser = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCadastrar = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnCadastrar = new Guna.UI2.WinForms.Guna2Button();
-            this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
-            this.txtUser = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtPass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,7 +56,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::Login.Properties.Resources.botao_x;
-            this.pictureBox3.Location = new System.Drawing.Point(344, 9);
+            this.pictureBox3.Location = new System.Drawing.Point(338, 9);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(18, 18);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -77,10 +77,118 @@
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(365, 0);
+            this.panel1.Location = new System.Drawing.Point(368, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(375, 501);
+            this.panel1.Size = new System.Drawing.Size(372, 501);
             this.panel1.TabIndex = 16;
+            // 
+            // txtPass
+            // 
+            this.txtPass.BackColor = System.Drawing.Color.Transparent;
+            this.txtPass.BorderRadius = 10;
+            this.txtPass.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.txtPass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPass.DefaultText = "";
+            this.txtPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPass.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(25)))), ((int)(((byte)(43)))));
+            this.txtPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPass.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPass.ForeColor = System.Drawing.Color.Gray;
+            this.txtPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPass.HoverState.ForeColor = System.Drawing.Color.White;
+            this.txtPass.Location = new System.Drawing.Point(55, 255);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtPass.PlaceholderText = "SENHA";
+            this.txtPass.SelectedText = "";
+            this.txtPass.Size = new System.Drawing.Size(302, 36);
+            this.txtPass.TabIndex = 19;
+            this.txtPass.UseSystemPasswordChar = true;
+            this.txtPass.MouseEnter += new System.EventHandler(this.txtPass_Enter);
+            this.txtPass.MouseLeave += new System.EventHandler(this.txtPass_Leave);
+            // 
+            // txtUser
+            // 
+            this.txtUser.BackColor = System.Drawing.Color.Transparent;
+            this.txtUser.BorderRadius = 10;
+            this.txtUser.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.txtUser.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUser.DefaultText = "";
+            this.txtUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(25)))), ((int)(((byte)(43)))));
+            this.txtUser.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUser.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtUser.ForeColor = System.Drawing.Color.Gray;
+            this.txtUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUser.HoverState.ForeColor = System.Drawing.Color.White;
+            this.txtUser.Location = new System.Drawing.Point(55, 202);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtUser.PlaceholderText = "USUARIO";
+            this.txtUser.SelectedText = "";
+            this.txtUser.Size = new System.Drawing.Size(302, 36);
+            this.txtUser.TabIndex = 18;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLogin.Animated = true;
+            this.btnLogin.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnLogin.BorderRadius = 20;
+            this.btnLogin.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.btnLogin.BorderThickness = 2;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLogin.FillColor = System.Drawing.Color.DarkCyan;
+            this.btnLogin.FocusedColor = System.Drawing.Color.White;
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.HoverState.BorderColor = System.Drawing.Color.White;
+            this.btnLogin.HoverState.CustomBorderColor = System.Drawing.Color.White;
+            this.btnLogin.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnLogin.Location = new System.Drawing.Point(54, 361);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(294, 45);
+            this.btnLogin.TabIndex = 17;
+            this.btnLogin.Text = "LOGIN";
+            this.btnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
+            // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCadastrar.Animated = true;
+            this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCadastrar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCadastrar.BorderRadius = 20;
+            this.btnCadastrar.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.btnCadastrar.BorderThickness = 2;
+            this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCadastrar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCadastrar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCadastrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCadastrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCadastrar.FillColor = System.Drawing.Color.DarkCyan;
+            this.btnCadastrar.FocusedColor = System.Drawing.Color.White;
+            this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrar.ForeColor = System.Drawing.Color.White;
+            this.btnCadastrar.HoverState.BorderColor = System.Drawing.Color.White;
+            this.btnCadastrar.HoverState.CustomBorderColor = System.Drawing.Color.White;
+            this.btnCadastrar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnCadastrar.Location = new System.Drawing.Point(54, 412);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(294, 45);
+            this.btnCadastrar.TabIndex = 16;
+            this.btnCadastrar.Text = "CADASTRAR";
             // 
             // pictureBox1
             // 
@@ -145,23 +253,6 @@
             this.panel2.Size = new System.Drawing.Size(367, 501);
             this.panel2.TabIndex = 17;
             // 
-            // bunifuElipse2
-            // 
-            this.bunifuElipse2.ElipseRadius = 30;
-            this.bunifuElipse2.TargetControl = this;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Cambria", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(23)))), ((int)(((byte)(56)))));
-            this.label1.Location = new System.Drawing.Point(12, 100);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(350, 34);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Bem-vindo ao WorkEasy!";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -175,113 +266,22 @@
             this.label2.Text = "Sua plataforma moderna\r\n e eficiente para gestão \r\nde chamados";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnCadastrar
+            // label1
             // 
-            this.btnCadastrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCadastrar.Animated = true;
-            this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
-            this.btnCadastrar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnCadastrar.BorderRadius = 20;
-            this.btnCadastrar.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.btnCadastrar.BorderThickness = 2;
-            this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCadastrar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCadastrar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCadastrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCadastrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCadastrar.FillColor = System.Drawing.Color.DarkCyan;
-            this.btnCadastrar.FocusedColor = System.Drawing.Color.White;
-            this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.HoverState.BorderColor = System.Drawing.Color.White;
-            this.btnCadastrar.HoverState.CustomBorderColor = System.Drawing.Color.White;
-            this.btnCadastrar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnCadastrar.Location = new System.Drawing.Point(57, 412);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(294, 45);
-            this.btnCadastrar.TabIndex = 16;
-            this.btnCadastrar.Text = "CADASTRAR";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Cambria", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(23)))), ((int)(((byte)(56)))));
+            this.label1.Location = new System.Drawing.Point(12, 100);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(350, 34);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Bem-vindo ao WorkEasy!";
             // 
-            // btnLogin
+            // guna2Elipse1
             // 
-            this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLogin.Animated = true;
-            this.btnLogin.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnLogin.BorderRadius = 20;
-            this.btnLogin.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.btnLogin.BorderThickness = 2;
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLogin.FillColor = System.Drawing.Color.DarkCyan;
-            this.btnLogin.FocusedColor = System.Drawing.Color.White;
-            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.HoverState.BorderColor = System.Drawing.Color.White;
-            this.btnLogin.HoverState.CustomBorderColor = System.Drawing.Color.White;
-            this.btnLogin.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnLogin.Location = new System.Drawing.Point(57, 361);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(294, 45);
-            this.btnLogin.TabIndex = 17;
-            this.btnLogin.Text = "LOGIN";
-            this.btnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
-            // 
-            // txtUser
-            // 
-            this.txtUser.BackColor = System.Drawing.Color.Transparent;
-            this.txtUser.BorderRadius = 10;
-            this.txtUser.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.txtUser.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUser.DefaultText = "";
-            this.txtUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(25)))), ((int)(((byte)(43)))));
-            this.txtUser.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUser.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtUser.ForeColor = System.Drawing.Color.Gray;
-            this.txtUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUser.HoverState.ForeColor = System.Drawing.Color.White;
-            this.txtUser.Location = new System.Drawing.Point(55, 202);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtUser.PlaceholderText = "USUARIO";
-            this.txtUser.SelectedText = "";
-            this.txtUser.Size = new System.Drawing.Size(302, 36);
-            this.txtUser.TabIndex = 18;
-            // 
-            // txtPass
-            // 
-            this.txtPass.BackColor = System.Drawing.Color.Transparent;
-            this.txtPass.BorderRadius = 10;
-            this.txtPass.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.txtPass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPass.DefaultText = "";
-            this.txtPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPass.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(25)))), ((int)(((byte)(43)))));
-            this.txtPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPass.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPass.ForeColor = System.Drawing.Color.Gray;
-            this.txtPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPass.HoverState.ForeColor = System.Drawing.Color.White;
-            this.txtPass.Location = new System.Drawing.Point(55, 255);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtPass.PlaceholderText = "SENHA";
-            this.txtPass.SelectedText = "";
-            this.txtPass.Size = new System.Drawing.Size(302, 36);
-            this.txtPass.TabIndex = 19;
-            this.txtPass.UseSystemPasswordChar = true;
-            this.txtPass.MouseEnter += new System.EventHandler(this.txtPass_Enter);
-            this.txtPass.MouseLeave += new System.EventHandler(this.txtPass_Leave);
+            this.guna2Elipse1.BorderRadius = 40;
+            this.guna2Elipse1.TargetControl = this;
             // 
             // FormLogin
             // 
@@ -316,12 +316,12 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button btnCadastrar;
         private Guna.UI2.WinForms.Guna2Button btnLogin;
         private Guna.UI2.WinForms.Guna2TextBox txtUser;
         private Guna.UI2.WinForms.Guna2TextBox txtPass;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

@@ -17,6 +17,7 @@ namespace Login
         public FormSolicitacao()
         {
             InitializeComponent();
+            this.Load += FormSolicitacao_Load;
 
 
             if (dataGridView1 == null)
@@ -74,7 +75,6 @@ namespace Login
             dataGridView1.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
 
             dataGridView1.RowTemplate.Height = 40;
-            dataGridView1.DefaultCellStyle.BackColor = Color.White;
             dataGridView1.ColumnHeadersVisible = false;
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.AllowUserToAddRows = false;
@@ -98,6 +98,11 @@ namespace Login
 
 
             btnPesquisar.Click += BtnPesquisar_Click;
+        }
+
+        private void FormSolicitacao_Load(object sender, EventArgs e)
+        {
+            dataGridView1.ClearSelection(); 
         }
 
         private void BtnPesquisar_Click(object sender, EventArgs e)
@@ -147,20 +152,6 @@ namespace Login
         }
 
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -202,7 +193,7 @@ namespace Login
             {
                 if (!dataGridView1.Rows[e.RowIndex].Selected)
                 {
-                   // dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightGray;
+                   dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightGray;
                 }
             }
         }
@@ -213,20 +204,12 @@ namespace Login
             {
                 if (!dataGridView1.Rows[e.RowIndex].Selected)
                 {
-                   // dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+                   dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.White;
                 }
             }
         }
 
-        private void btnPesquisa_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void AjustarImagemNoDataGridView()
         {

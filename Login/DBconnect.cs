@@ -10,7 +10,7 @@ namespace Login
    public class DBconnect
     {
 
-        public static string connectionString = @"Server=DESKTOP-FOIQ8TR\SQLEXPRESS;Database=GestaoRH;Trusted_Connection=True;";
+        public static string connectionString = @"Server=DESKTOP-FOIQ8TR\SQLEXPRESS;Database=chamados_rh;Trusted_Connection=True;";
 
         public static SqlConnection GetConnection()
         {

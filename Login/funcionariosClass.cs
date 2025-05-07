@@ -10,25 +10,29 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 using Microsoft.Identity.Client;
 using System.Data;
+using System.Security.Cryptography;
+using System.Windows.Media;
 
 namespace Login
 {
     class funcionariosClass
     {
 
-        public bool insertFuncionario(string fnome, string lnome, string tel, DateTime dataNascimento, string genero, string endereco, byte[] foto)
+        public bool insertFuncionario(string nome, string email, string tel, string endereco, string cpf, DateTime DataNascimento, DateTime DataAdmissao, string genero, byte[] imagem, string setor)
         {
             SqlConnection connection = DBconnect.GetConnection();
-            SqlCommand command = new SqlCommand("INSERT INTO funcionarios (Nome, Sobrenome, Telefone, Data_nascimento, Genero, Endereco, Foto) VALUES (@fn, @ln, @tl, @dn, @gn, @en, @img)", connection);
+            SqlCommand command = new SqlCommand("INSERT INTO FuncionarioEmpresa (nome, email, telefone, endereco, cpf, data_nascimento, data_admissao, genero, imagem, setor)  VALUES(@fn, @em, @tl, @en, @cp, @dtn, @dta, @gen, @img, @str)", connection);
 
-
-            command.Parameters.AddWithValue("@fn", fnome);
-            command.Parameters.AddWithValue("@ln", lnome);
+            command.Parameters.AddWithValue("@fn", nome);
+            command.Parameters.AddWithValue("@em", email);
             command.Parameters.AddWithValue("@tl", tel);
-            command.Parameters.AddWithValue("@dn", dataNascimento);
-            command.Parameters.AddWithValue("@gn", genero);
             command.Parameters.AddWithValue("@en", endereco);
-            command.Parameters.AddWithValue("@img", foto);
+            command.Parameters.AddWithValue("@cp", cpf);
+            command.Parameters.AddWithValue("@dtn", DataNascimento);
+            command.Parameters.AddWithValue("@dta", DataAdmissao);
+            command.Parameters.AddWithValue("@gen", genero);
+            command.Parameters.AddWithValue("@img", imagem);
+            command.Parameters.AddWithValue("@str", setor);
 
             try
             {
@@ -49,12 +53,12 @@ namespace Login
                 DBconnect.CloseConnection(connection);
             }
 
-            
+
         }
         public DataTable getFuncionarioList()
         {
 
-            SqlCommand command = new SqlCommand("SELECT * FROM funcionarios", DBconnect.GetConnection());
+            SqlCommand command = new SqlCommand("SELECT * FROM FuncionarioEmpresa", DBconnect.GetConnection());
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable table = new DataTable();
             adapter.Fill(table);

@@ -13,6 +13,7 @@ namespace Login
         public FormFuncionario()
         {
             InitializeComponent();
+            this.Load += FormFuncionario_Load;
 
 
             if (dgvColab == null)
@@ -170,7 +171,7 @@ namespace Login
             {
                 if (!dgvColab.Rows[e.RowIndex].Selected)
                 {
-                    dgvColab.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.SkyBlue;
+                 dgvColab.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.PowderBlue;
                 }
             }
         }
@@ -181,7 +182,7 @@ namespace Login
             {
                 if (!dgvColab.Rows[e.RowIndex].Selected)
                 {
-                    dgvColab.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+                   dgvColab.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.White;
                 }
             }
         }
@@ -243,7 +244,7 @@ namespace Login
 
         private void FormFuncionario_Load(object sender, EventArgs e)
         {
-
+            dgvColab.ClearSelection();
         }
         private void label1_Click(object sender, EventArgs e)
         {

@@ -123,9 +123,10 @@ namespace Login
 
             FormSolicitacao formSolicitacao = new FormSolicitacao();
 
+            formSolicitacao.Size = pSol.ClientSize;
             formSolicitacao.TopLevel = false;  
             formSolicitacao.FormBorderStyle = FormBorderStyle.None; 
-            formSolicitacao.Dock = DockStyle.Fill;  
+
 
             pSol.Controls.Clear();  
             pSol.Controls.Add(formSolicitacao);  
@@ -358,6 +359,11 @@ namespace Login
         private void panelMenu_Click(object sender, EventArgs e)
         {
             RecolherSubMenu();
+        }
+
+        private void lblNome_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

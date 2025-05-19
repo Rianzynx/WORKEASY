@@ -34,6 +34,7 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pbUser = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenuFunc = new Guna.UI2.WinForms.Guna2Panel();
             this.btnExcluir = new Guna.UI2.WinForms.Guna2Button();
@@ -47,12 +48,11 @@
             this.btnIni = new FontAwesome.Sharp.IconButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
             this.panelMenu.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelMenuFunc.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pSol
@@ -95,6 +95,15 @@
             this.panelMenu.Size = new System.Drawing.Size(95, 729);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.Click += new System.EventHandler(this.panelMenu_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pbUser);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 664);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(95, 65);
+            this.panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -161,6 +170,7 @@
             this.btnEditar.Size = new System.Drawing.Size(70, 45);
             this.btnEditar.TabIndex = 2;
             this.btnEditar.Text = "EDITAR";
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnCadastrar
             // 
@@ -325,15 +335,6 @@
             this.timer2.Interval = 15;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.pbUser);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 664);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(95, 65);
-            this.panel1.TabIndex = 0;
-            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -349,9 +350,9 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
             this.panelMenu.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelMenuFunc.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

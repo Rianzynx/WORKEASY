@@ -123,3 +123,5 @@ C:\Users\Rian\Documents\GitHub\WORKEASY\Login\bin\Debug\System.ServiceProcess.Se
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\bin\Debug\System.Text.Encoding.CodePages.xml
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\bin\Debug\System.Threading.AccessControl.xml
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.csproj.Fody.CopyLocal.cache
+C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.FormCadastroRh.resources
+C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.FormEditar.resources

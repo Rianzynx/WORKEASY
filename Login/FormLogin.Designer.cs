@@ -29,58 +29,65 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.panelFundo = new System.Windows.Forms.Panel();
+            this.panelDireito = new System.Windows.Forms.Panel();
             this.txtPass = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUser = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnCadastrar = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelEsquerdo = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.panelFundo.SuspendLayout();
+            this.panelDireito.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.panelEsquerdo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox3
+            // guna2Elipse1
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::Login.Properties.Resources.botao_x;
-            this.pictureBox3.Location = new System.Drawing.Point(338, 9);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(18, 18);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 10;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.BtnFechar);
+            this.guna2Elipse1.BorderRadius = 30;
+            this.guna2Elipse1.TargetControl = this;
             // 
-            // panel1
+            // panelFundo
             // 
-            this.panel1.BackgroundImage = global::Login.Properties.Resources.fundo;
-            this.panel1.Controls.Add(this.txtPass);
-            this.panel1.Controls.Add(this.txtUser);
-            this.panel1.Controls.Add(this.btnLogin);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.btnCadastrar);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.linkLabel1);
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(368, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(372, 501);
-            this.panel1.TabIndex = 16;
+            this.panelFundo.BackColor = System.Drawing.Color.DimGray;
+            this.panelFundo.Controls.Add(this.panelDireito);
+            this.panelFundo.Controls.Add(this.panelEsquerdo);
+            this.panelFundo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelFundo.Location = new System.Drawing.Point(0, 0);
+            this.panelFundo.Name = "panelFundo";
+            this.panelFundo.Size = new System.Drawing.Size(800, 501);
+            this.panelFundo.TabIndex = 18;
+            // 
+            // panelDireito
+            // 
+            this.panelDireito.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panelDireito.BackgroundImage = global::Login.Properties.Resources.fundo;
+            this.panelDireito.Controls.Add(this.txtPass);
+            this.panelDireito.Controls.Add(this.txtUser);
+            this.panelDireito.Controls.Add(this.btnLogin);
+            this.panelDireito.Controls.Add(this.pictureBox3);
+            this.panelDireito.Controls.Add(this.btnCadastrar);
+            this.panelDireito.Controls.Add(this.pictureBox1);
+            this.panelDireito.Controls.Add(this.linkLabel1);
+            this.panelDireito.Controls.Add(this.pictureBox5);
+            this.panelDireito.Controls.Add(this.pictureBox4);
+            this.panelDireito.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelDireito.Location = new System.Drawing.Point(400, 0);
+            this.panelDireito.Margin = new System.Windows.Forms.Padding(0);
+            this.panelDireito.Name = "panelDireito";
+            this.panelDireito.Size = new System.Drawing.Size(400, 501);
+            this.panelDireito.TabIndex = 16;
             // 
             // txtPass
             // 
@@ -99,7 +106,7 @@
             this.txtPass.ForeColor = System.Drawing.Color.Gray;
             this.txtPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPass.HoverState.ForeColor = System.Drawing.Color.White;
-            this.txtPass.Location = new System.Drawing.Point(55, 255);
+            this.txtPass.Location = new System.Drawing.Point(68, 255);
             this.txtPass.Name = "txtPass";
             this.txtPass.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtPass.PlaceholderText = "SENHA";
@@ -127,7 +134,7 @@
             this.txtUser.ForeColor = System.Drawing.Color.Gray;
             this.txtUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUser.HoverState.ForeColor = System.Drawing.Color.White;
-            this.txtUser.Location = new System.Drawing.Point(55, 202);
+            this.txtUser.Location = new System.Drawing.Point(68, 202);
             this.txtUser.Name = "txtUser";
             this.txtUser.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtUser.PlaceholderText = "USUARIO";
@@ -156,12 +163,25 @@
             this.btnLogin.HoverState.BorderColor = System.Drawing.Color.White;
             this.btnLogin.HoverState.CustomBorderColor = System.Drawing.Color.White;
             this.btnLogin.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnLogin.Location = new System.Drawing.Point(54, 361);
+            this.btnLogin.Location = new System.Drawing.Point(66, 362);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(294, 45);
             this.btnLogin.TabIndex = 17;
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::Login.Properties.Resources.botao_x;
+            this.pictureBox3.Location = new System.Drawing.Point(370, 10);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(18, 18);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 10;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.BtnFechar);
             // 
             // btnCadastrar
             // 
@@ -184,11 +204,12 @@
             this.btnCadastrar.HoverState.BorderColor = System.Drawing.Color.White;
             this.btnCadastrar.HoverState.CustomBorderColor = System.Drawing.Color.White;
             this.btnCadastrar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnCadastrar.Location = new System.Drawing.Point(54, 412);
+            this.btnCadastrar.Location = new System.Drawing.Point(66, 413);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(294, 45);
             this.btnCadastrar.TabIndex = 16;
             this.btnCadastrar.Text = "CADASTRAR";
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // pictureBox1
             // 
@@ -220,7 +241,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::Login.Properties.Resources.passNotHide;
-            this.pictureBox5.Location = new System.Drawing.Point(19, 256);
+            this.pictureBox5.Location = new System.Drawing.Point(32, 256);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(30, 30);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -233,25 +254,27 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = global::Login.Properties.Resources.userIcon;
             this.pictureBox4.Image = global::Login.Properties.Resources.userIcon;
-            this.pictureBox4.Location = new System.Drawing.Point(19, 202);
+            this.pictureBox4.Location = new System.Drawing.Point(32, 202);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(30, 30);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 12;
             this.pictureBox4.TabStop = false;
             // 
-            // panel2
+            // panelEsquerdo
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.BackgroundImage = global::Login.Properties.Resources.fundoRh;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(367, 501);
-            this.panel2.TabIndex = 17;
+            this.panelEsquerdo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panelEsquerdo.BackColor = System.Drawing.Color.White;
+            this.panelEsquerdo.BackgroundImage = global::Login.Properties.Resources.fundoRh;
+            this.panelEsquerdo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelEsquerdo.Controls.Add(this.label2);
+            this.panelEsquerdo.Controls.Add(this.label1);
+            this.panelEsquerdo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelEsquerdo.Location = new System.Drawing.Point(0, 0);
+            this.panelEsquerdo.Margin = new System.Windows.Forms.Padding(0);
+            this.panelEsquerdo.Name = "panelEsquerdo";
+            this.panelEsquerdo.Size = new System.Drawing.Size(400, 501);
+            this.panelEsquerdo.TabIndex = 17;
             // 
             // label2
             // 
@@ -278,40 +301,35 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Bem-vindo ao WorkEasy!";
             // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 40;
-            this.guna2Elipse1.TargetControl = this;
-            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(740, 501);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(800, 501);
+            this.Controls.Add(this.panelFundo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLogin";
             this.Load += new System.EventHandler(this.FormLogin_Load);
+            this.panelFundo.ResumeLayout(false);
+            this.panelDireito.ResumeLayout(false);
+            this.panelDireito.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.panelEsquerdo.ResumeLayout(false);
+            this.panelEsquerdo.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelEsquerdo;
+        private System.Windows.Forms.Panel panelDireito;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.PictureBox pictureBox5;
@@ -323,5 +341,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtUser;
         private Guna.UI2.WinForms.Guna2TextBox txtPass;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private System.Windows.Forms.Panel panelFundo;
     }
 }

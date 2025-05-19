@@ -365,5 +365,21 @@ namespace Login
         {
 
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            FormEditar formeditar = new FormEditar();
+
+            formeditar.TopLevel = false;
+            formeditar.FormBorderStyle = FormBorderStyle.None;
+            formeditar.Dock = DockStyle.Fill;
+
+            pSol.Controls.Clear();
+            pSol.Controls.Add(formeditar);
+
+            formeditar.Show();
+
+            formularioAtual = formeditar;
+        }
     }
 }

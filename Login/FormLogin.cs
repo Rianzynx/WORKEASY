@@ -14,6 +14,7 @@ namespace Login
 {
     public partial class FormLogin: Form
     {
+        private Form formularioAtual = null;
         public FormLogin()
         {
             InitializeComponent();
@@ -137,8 +138,20 @@ namespace Login
             }
         }
 
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
 
+            FormCadastroRh formcadastroRh = new FormCadastroRh();
 
-       
+            formcadastroRh.TopLevel = false;
+            formcadastroRh.FormBorderStyle = FormBorderStyle.None;
+            formcadastroRh.Dock = DockStyle.Fill;
+
+            panelFundo.Controls.Clear();
+            panelFundo.Controls.Add(formcadastroRh);
+
+            formcadastroRh.Show();
+
+        }
     }
 }

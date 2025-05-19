@@ -340,11 +340,23 @@
     <Compile Include="FormCadastrar.Designer.cs">
       <DependentUpon>FormCadastrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCadastroRh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroRh.Designer.cs">
+      <DependentUpon>FormCadastroRh.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCarregamento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormCarregamento.Designer.cs">
       <DependentUpon>FormCarregamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditar.Designer.cs">
+      <DependentUpon>FormEditar.cs</DependentUpon>
     </Compile>
     <Compile Include="FormFuncionario.cs">
       <SubType>Form</SubType>
@@ -370,7 +382,6 @@
     <Compile Include="FormSolicitacao.Designer.cs">
       <DependentUpon>FormSolicitacao.cs</DependentUpon>
     </Compile>
-    <Compile Include="FuncionarioClass.cs" />
     <Compile Include="funcionariosClass.cs" />
     <Compile Include="personButtons.cs">
       <SubType>Component</SubType>
@@ -383,8 +394,14 @@
     <EmbeddedResource Include="FormCadastrar.resx">
       <DependentUpon>FormCadastrar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastroRh.resx">
+      <DependentUpon>FormCadastroRh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCarregamento.resx">
       <DependentUpon>FormCarregamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditar.resx">
+      <DependentUpon>FormEditar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormFuncionario.resx">
       <DependentUpon>FormFuncionario.cs</DependentUpon>
@@ -632,6 +649,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fundoRh1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundoCadastro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundoCadastro2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />

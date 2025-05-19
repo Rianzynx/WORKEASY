@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblFuncAtivo = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -48,9 +48,9 @@
             this.pDados = new System.Windows.Forms.Panel();
             this.pDGV = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.txtPesquisarColab = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnPesquisarColab = new System.Windows.Forms.Button();
-            this.txtPesquisarColab = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -68,7 +68,7 @@
             this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.lblFuncAtivo);
             this.panel1.Location = new System.Drawing.Point(136, 48);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(263, 108);
@@ -96,18 +96,17 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // label3
+            // lblFuncAtivo
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(20, 25);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 65);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "56";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.lblFuncAtivo.AutoSize = true;
+            this.lblFuncAtivo.BackColor = System.Drawing.Color.Transparent;
+            this.lblFuncAtivo.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFuncAtivo.ForeColor = System.Drawing.Color.White;
+            this.lblFuncAtivo.Location = new System.Drawing.Point(20, 25);
+            this.lblFuncAtivo.Name = "lblFuncAtivo";
+            this.lblFuncAtivo.Size = new System.Drawing.Size(0, 65);
+            this.lblFuncAtivo.TabIndex = 6;
+            this.lblFuncAtivo.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -225,25 +224,25 @@
             this.dgvColab.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvColab.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvColab.ColumnHeadersVisible = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvColab.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvColab.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvColab.GridColor = System.Drawing.Color.Gray;
             this.dgvColab.Location = new System.Drawing.Point(115, 75);
             this.dgvColab.Name = "dgvColab";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvColab.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvColab.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvColab.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvColab.Size = new System.Drawing.Size(879, 200);
             this.dgvColab.TabIndex = 9;
@@ -299,6 +298,29 @@
             this.panel6.Size = new System.Drawing.Size(1138, 217);
             this.panel6.TabIndex = 12;
             // 
+            // txtPesquisarColab
+            // 
+            this.txtPesquisarColab.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPesquisarColab.Animated = true;
+            this.txtPesquisarColab.BorderColor = System.Drawing.Color.DimGray;
+            this.txtPesquisarColab.BorderRadius = 10;
+            this.txtPesquisarColab.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPesquisarColab.DefaultText = "";
+            this.txtPesquisarColab.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPesquisarColab.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPesquisarColab.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPesquisarColab.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPesquisarColab.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPesquisarColab.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPesquisarColab.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.txtPesquisarColab.Location = new System.Drawing.Point(848, 181);
+            this.txtPesquisarColab.Name = "txtPesquisarColab";
+            this.txtPesquisarColab.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtPesquisarColab.PlaceholderText = "Pesquisar funcionario";
+            this.txtPesquisarColab.SelectedText = "";
+            this.txtPesquisarColab.Size = new System.Drawing.Size(234, 28);
+            this.txtPesquisarColab.TabIndex = 13;
+            // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(30)))));
@@ -329,29 +351,6 @@
             this.btnPesquisarColab.Size = new System.Drawing.Size(49, 33);
             this.btnPesquisarColab.TabIndex = 12;
             this.btnPesquisarColab.UseVisualStyleBackColor = false;
-            // 
-            // txtPesquisarColab
-            // 
-            this.txtPesquisarColab.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPesquisarColab.Animated = true;
-            this.txtPesquisarColab.BorderColor = System.Drawing.Color.DimGray;
-            this.txtPesquisarColab.BorderRadius = 10;
-            this.txtPesquisarColab.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPesquisarColab.DefaultText = "";
-            this.txtPesquisarColab.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPesquisarColab.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPesquisarColab.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPesquisarColab.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPesquisarColab.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPesquisarColab.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPesquisarColab.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.txtPesquisarColab.Location = new System.Drawing.Point(848, 181);
-            this.txtPesquisarColab.Name = "txtPesquisarColab";
-            this.txtPesquisarColab.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtPesquisarColab.PlaceholderText = "Pesquisar funcionario";
-            this.txtPesquisarColab.SelectedText = "";
-            this.txtPesquisarColab.Size = new System.Drawing.Size(234, 28);
-            this.txtPesquisarColab.TabIndex = 13;
             // 
             // FormFuncionario
             // 
@@ -384,7 +383,7 @@
 
         #endregion
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblFuncAtivo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;

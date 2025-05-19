@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using System.Data.SqlClient;
 
 namespace Login
 {
@@ -14,6 +15,7 @@ namespace Login
         {
             InitializeComponent();
             this.Load += FormFuncionario_Load;
+
 
 
             if (dgvColab == null)
@@ -97,6 +99,32 @@ namespace Login
             btnPesquisarColab.Click += BtnPesquisarColab_Click;
         }
 
+
+
+        private void ExibirNumeroDeFuncionarios()
+        {
+            string query = "SELECT COUNT(*) FROM FuncionarioEmpresa";
+
+            try
+            {
+                using (SqlConnection connection = DBconnect.GetConnection())
+
+                {
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        int numeroDeFuncionarios = (int)command.ExecuteScalar();
+                        lblFuncAtivo.Text = $"{numeroDeFuncionarios}";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao buscar o número de funcionários: {ex.Message}");
+            }
+        }
+
+
         private void BtnPesquisarColab_Click(object sender, EventArgs e)
         {
             string termoPesquisa = txtPesquisarColab.Text.ToLower();
@@ -104,7 +132,7 @@ namespace Login
             var linhasFiltradas = ((DataTable)dgvColab.DataSource).AsEnumerable()
                 .Where(row => row.Field<string>("Nome").ToLower().Contains(termoPesquisa) ||
                               row.Field<string>("Assunto").ToLower().Contains(termoPesquisa) ||
-                              row.Field<string>("Data").ToLower().Contains(termoPesquisa))  
+                              row.Field<string>("Data").ToLower().Contains(termoPesquisa))
                 .ToArray();
 
             DataTable filtroDataTable = ((DataTable)dgvColab.DataSource).Clone();
@@ -123,9 +151,9 @@ namespace Login
 
             if (larguraTotal > 0)
             {
-                dgvColab.Columns[0].Width = (int)(larguraTotal * 0.10);  
-                dgvColab.Columns[1].Width = (int)(larguraTotal * 0.15);  
-                dgvColab.Columns[2].Width = (int)(larguraTotal * 0.40);  
+                dgvColab.Columns[0].Width = (int)(larguraTotal * 0.10);
+                dgvColab.Columns[1].Width = (int)(larguraTotal * 0.15);
+                dgvColab.Columns[2].Width = (int)(larguraTotal * 0.40);
                 dgvColab.Columns[3].Width = (int)(larguraTotal * 0.15);
                 dgvColab.Columns[4].Width = (int)(larguraTotal * 0.20);
             }
@@ -171,7 +199,7 @@ namespace Login
             {
                 if (!dgvColab.Rows[e.RowIndex].Selected)
                 {
-                 dgvColab.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.PowderBlue;
+                    dgvColab.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.PowderBlue;
                 }
             }
         }
@@ -182,7 +210,7 @@ namespace Login
             {
                 if (!dgvColab.Rows[e.RowIndex].Selected)
                 {
-                   dgvColab.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.White;
+                    dgvColab.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.White;
                 }
             }
         }
@@ -196,9 +224,9 @@ namespace Login
 
             int btnWidth = 20;
             int spacing = 5;
-            int total = 3 * btnWidth + 2 * spacing; 
-            int startX = e.CellBounds.Left + (e.CellBounds.Width - total) / 2; 
-            int startY = e.CellBounds.Top + (e.CellBounds.Height - btnWidth) / 2; 
+            int total = 3 * btnWidth + 2 * spacing;
+            int startX = e.CellBounds.Left + (e.CellBounds.Width - total) / 2;
+            int startY = e.CellBounds.Top + (e.CellBounds.Height - btnWidth) / 2;
 
             for (int i = 0; i < 3; i++)
             {
@@ -206,15 +234,15 @@ namespace Login
 
                 if (i == 0)
                 {
-                    e.Graphics.DrawImage(Resources.iconEditarFunc, rect); 
+                    e.Graphics.DrawImage(Resources.iconEditarFunc, rect);
                 }
                 else if (i == 1)
                 {
-                    e.Graphics.DrawImage(Resources.iconExcluir, rect);  
+                    e.Graphics.DrawImage(Resources.iconExcluir, rect);
                 }
                 else if (i == 2)
                 {
-                    e.Graphics.DrawImage(Resources.iconVisualizar, rect); 
+                    e.Graphics.DrawImage(Resources.iconVisualizar, rect);
                 }
             }
         }
@@ -245,31 +273,14 @@ namespace Login
         private void FormFuncionario_Load(object sender, EventArgs e)
         {
             dgvColab.ClearSelection();
+            ExibirNumeroDeFuncionarios();
         }
         private void label1_Click(object sender, EventArgs e)
         {
-            
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-         
-        }
-
-        private void btnSalario_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -288,7 +299,7 @@ namespace Login
 
         private void btnCadastro_Click(object sender, EventArgs e)
         {
-           
+
         }
     }
 }

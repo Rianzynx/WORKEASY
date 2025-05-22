@@ -260,7 +260,27 @@ namespace Login
 
         private void btnRelat_Click(object sender, EventArgs e)
         {
+
             RecolherSubMenu();
+
+            if (formularioAtual is FormSolicitacao)
+            {
+                return;
+            }
+
+            FormRelatorio formRelatorio = new FormRelatorio();
+
+            formRelatorio.Size = pSol.ClientSize;
+            formRelatorio.TopLevel = false;
+            formRelatorio.FormBorderStyle = FormBorderStyle.None;
+
+
+            pSol.Controls.Clear();
+            pSol.Controls.Add(formRelatorio);
+
+            formRelatorio.Show();
+
+            formularioAtual = formRelatorio;
         }
 
    

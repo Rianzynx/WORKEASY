@@ -22,25 +22,22 @@ namespace Login
 
         private void btnCadFunc_Click(object sender, EventArgs e)
         {
-            // Verificando se todos os campos estão preenchidos
             if (!verify())
             {
                 MessageBox.Show("Preencha todos os campos obrigatórios!", "Campos Vazios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Dados do funcionário
             string nome = txtNome.Text;
             string email = txtEmail.Text;
             string tel = txtTel.Text;
             string endereco = txtEndereco.Text;
             string cpf = txtCpf.Text;
             DateTime dataNascimento = DNascimento.Value;
-            DateTime dataAdmissao = DateTime.Now;  // Adicione um campo se necessário
+            DateTime dataAdmissao = DateTime.Now; 
             string genero = rBtnMasc.Checked ? "Masculino" : "Feminino";
             string setor = cbSetor.Text;
 
-            // Validando idade
             int idade = DateTime.Now.Year - dataNascimento.Year;
             if (idade < 18 || idade > 100)
             {
@@ -48,22 +45,23 @@ namespace Login
                 return;
             }
 
-            // Convertendo imagem para byte[]
             byte[] imagem;
             using (MemoryStream ms = new MemoryStream())
             {
-                pbFuncionario.Image.Save(ms, pbFuncionario.Image.RawFormat);
+                pbFuncionarioEmpresa.Image.Save(ms, pbFuncionarioEmpresa.Image.RawFormat);
                 imagem = ms.ToArray();
             }
 
-            // Inserindo funcionário
+       
             bool insert = funcionario.insertFuncionario(nome, email, tel, endereco, cpf, dataNascimento, dataAdmissao, genero, imagem, setor);
 
             if (insert)
             {
                 MessageBox.Show("Funcionário cadastrado com sucesso!", "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 btnLimpar.PerformClick();
-                showTable();  // Atualiza a tabela após o cadastro
+                DataTable funcionarioData = funcionario.getFuncionarioByCpf(txtCpf.Text.Trim());
+                dataGridView_funcionarios.DataSource = funcionarioData;
+                showTable();  
             }
             else
             {
@@ -71,16 +69,14 @@ namespace Login
             }
         }
 
-        // Verificando se todos os campos obrigatórios estão preenchidos
         bool verify()
         {
             return !string.IsNullOrWhiteSpace(txtNome.Text) &&
                    !string.IsNullOrWhiteSpace(txtTel.Text) &&
                    !string.IsNullOrWhiteSpace(txtEndereco.Text) &&
-                   pbFuncionario.Image != null;
+                   pbFuncionarioEmpresa.Image != null;
         }
 
-        // Limpando os campos do formulário
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             txtNome.Clear();
@@ -91,10 +87,9 @@ namespace Login
             DNascimento.Value = DateTime.Now;
             rBtnMasc.Checked = false;
             rBtnFem.Checked = false;
-            pbFuncionario.Image = null;
+            pbFuncionarioEmpresa.Image = null;
         }
 
-        // Carregando a imagem do funcionário
         private void btnFoto_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -102,11 +97,10 @@ namespace Login
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                pbFuncionario.Image = Image.FromFile(openFileDialog.FileName);
+                pbFuncionarioEmpresa.Image = Image.FromFile(openFileDialog.FileName);
             }
         }
 
-        // Carregando a tabela de funcionários
         private void FormCadastrar_Load(object sender, EventArgs e)
         {
             showTable();
@@ -118,10 +112,8 @@ namespace Login
 
             if (dataGridView_funcionarios.Columns.Count > 0)
             {
-                // Ocultando a coluna de ID (se presente)
                 dataGridView_funcionarios.Columns[0].Visible = false;
 
-                // Configurando a exibição das imagens
                 dataGridView_funcionarios.RowTemplate.Height = 40;
                 dataGridView_funcionarios.RowHeadersVisible = false;
                 dataGridView_funcionarios.AllowUserToAddRows = false;
@@ -130,7 +122,6 @@ namespace Login
                 dataGridView_funcionarios.Dock = DockStyle.Fill;
                 dataGridView_funcionarios.ColumnHeadersVisible = true;
 
-                // Definindo os textos dos cabeçalhos
                 dataGridView_funcionarios.Columns["id_funcionario"].HeaderText = "ID";
                 dataGridView_funcionarios.Columns["nome"].HeaderText = "Nome";
                 dataGridView_funcionarios.Columns["email"].HeaderText = "Email";

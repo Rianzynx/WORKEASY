@@ -125,3 +125,4 @@ C:\Users\Rian\Documents\GitHub\WORKEASY\Login\bin\Debug\System.Threading.AccessC
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.csproj.Fody.CopyLocal.cache
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.FormCadastroRh.resources
 C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.FormEditar.resources
+C:\Users\Rian\Documents\GitHub\WORKEASY\Login\obj\Debug\Login.FormRelatorio.resources

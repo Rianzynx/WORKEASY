@@ -64,12 +64,12 @@ namespace Login
                 byte[] imagemBytes = (byte[])row["imagem"];
                 using (MemoryStream ms = new MemoryStream(imagemBytes))
                 {
-                    pbFuncionario.Image = Image.FromStream(ms);
+                    pbFuncionarioEmpresa.Image = Image.FromStream(ms);
                 }
             }
             else
             {
-                pbFuncionario.Image = null;
+                pbFuncionarioEmpresa.Image = null;
             }
 
             // Exibindo os dados no DataGridView
@@ -104,14 +104,17 @@ namespace Login
             string genero = rBtnMasc.Checked ? "Masculino" : "Feminino";
 
             byte[] imagem = null;
-            if (pbFuncionario.Image != null)
+            if (pbFuncionarioEmpresa.Image != null)
             {
                 try
                 {
                     using (MemoryStream ms = new MemoryStream())
                     {
-                        pbFuncionario.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
-                        imagem = ms.ToArray();
+                        using (Bitmap bmp = new Bitmap(pbFuncionarioEmpresa.Image))
+                        {
+                            bmp.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                            imagem = ms.ToArray();
+                        }
                     }
                 }
                 catch (Exception ex)
@@ -128,6 +131,9 @@ namespace Login
             if (updated)
             {
                 MessageBox.Show("Funcionário atualizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DataTable funcionarioData = funcionario.getFuncionarioByCpf(txtCpf.Text.Trim());
+                dgvEdicaoFunc.DataSource = funcionarioData;
+                showTable();
             }
             else
             {
@@ -177,6 +183,17 @@ namespace Login
                         col.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                     }
                 }
+            }
+        }
+
+        private void btnFoto_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Arquivos de Imagem|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                pbFuncionarioEmpresa.Image = Image.FromFile(openFileDialog.FileName);
             }
         }
     }

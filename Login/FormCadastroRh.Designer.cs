@@ -198,10 +198,10 @@
             this.txtCpf.PlaceholderText = "CPF";
             this.txtCpf.SelectedText = "";
             this.txtCpf.ShadowDecoration.BorderRadius = 4;
-            this.txtCpf.ShadowDecoration.Color = System.Drawing.Color.Teal;
+            this.txtCpf.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(30)))));
             this.txtCpf.ShadowDecoration.Depth = 200;
             this.txtCpf.ShadowDecoration.Enabled = true;
-            this.txtCpf.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 2, 3);
+            this.txtCpf.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.txtCpf.Size = new System.Drawing.Size(340, 40);
             this.txtCpf.TabIndex = 6;
             // 
@@ -230,10 +230,10 @@
             this.txtEndereco.PlaceholderText = "Endereço";
             this.txtEndereco.SelectedText = "";
             this.txtEndereco.ShadowDecoration.BorderRadius = 4;
-            this.txtEndereco.ShadowDecoration.Color = System.Drawing.Color.Teal;
+            this.txtEndereco.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(30)))));
             this.txtEndereco.ShadowDecoration.Depth = 200;
             this.txtEndereco.ShadowDecoration.Enabled = true;
-            this.txtEndereco.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 2, 3);
+            this.txtEndereco.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.txtEndereco.Size = new System.Drawing.Size(340, 40);
             this.txtEndereco.TabIndex = 5;
             // 
@@ -262,10 +262,10 @@
             this.txtTelefone.PlaceholderText = "Telefone";
             this.txtTelefone.SelectedText = "";
             this.txtTelefone.ShadowDecoration.BorderRadius = 4;
-            this.txtTelefone.ShadowDecoration.Color = System.Drawing.Color.Teal;
+            this.txtTelefone.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(30)))));
             this.txtTelefone.ShadowDecoration.Depth = 200;
             this.txtTelefone.ShadowDecoration.Enabled = true;
-            this.txtTelefone.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 2, 3);
+            this.txtTelefone.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.txtTelefone.Size = new System.Drawing.Size(340, 40);
             this.txtTelefone.TabIndex = 4;
             // 
@@ -294,10 +294,10 @@
             this.txtEmail.PlaceholderText = "Email";
             this.txtEmail.SelectedText = "";
             this.txtEmail.ShadowDecoration.BorderRadius = 4;
-            this.txtEmail.ShadowDecoration.Color = System.Drawing.Color.Teal;
+            this.txtEmail.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(30)))));
             this.txtEmail.ShadowDecoration.Depth = 200;
             this.txtEmail.ShadowDecoration.Enabled = true;
-            this.txtEmail.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 2, 3);
+            this.txtEmail.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.txtEmail.Size = new System.Drawing.Size(340, 40);
             this.txtEmail.TabIndex = 3;
             // 
@@ -377,10 +377,10 @@
             this.txtConfirmarSenha.PlaceholderText = "Confirmar senha";
             this.txtConfirmarSenha.SelectedText = "";
             this.txtConfirmarSenha.ShadowDecoration.BorderRadius = 4;
-            this.txtConfirmarSenha.ShadowDecoration.Color = System.Drawing.Color.Teal;
+            this.txtConfirmarSenha.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(30)))));
             this.txtConfirmarSenha.ShadowDecoration.Depth = 200;
             this.txtConfirmarSenha.ShadowDecoration.Enabled = true;
-            this.txtConfirmarSenha.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 2, 3);
+            this.txtConfirmarSenha.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.txtConfirmarSenha.Size = new System.Drawing.Size(340, 35);
             this.txtConfirmarSenha.TabIndex = 32;
             // 
@@ -409,10 +409,10 @@
             this.txtCodigoAcesso.PlaceholderText = "Código de acesso";
             this.txtCodigoAcesso.SelectedText = "";
             this.txtCodigoAcesso.ShadowDecoration.BorderRadius = 4;
-            this.txtCodigoAcesso.ShadowDecoration.Color = System.Drawing.Color.Teal;
+            this.txtCodigoAcesso.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(30)))));
             this.txtCodigoAcesso.ShadowDecoration.Depth = 200;
             this.txtCodigoAcesso.ShadowDecoration.Enabled = true;
-            this.txtCodigoAcesso.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 2, 3);
+            this.txtCodigoAcesso.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.txtCodigoAcesso.Size = new System.Drawing.Size(340, 35);
             this.txtCodigoAcesso.TabIndex = 31;
             // 
@@ -441,10 +441,10 @@
             this.txtSenha.PlaceholderText = "Senha";
             this.txtSenha.SelectedText = "";
             this.txtSenha.ShadowDecoration.BorderRadius = 4;
-            this.txtSenha.ShadowDecoration.Color = System.Drawing.Color.Teal;
+            this.txtSenha.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(30)))));
             this.txtSenha.ShadowDecoration.Depth = 200;
             this.txtSenha.ShadowDecoration.Enabled = true;
-            this.txtSenha.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 2, 3);
+            this.txtSenha.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.txtSenha.Size = new System.Drawing.Size(340, 35);
             this.txtSenha.TabIndex = 30;
             // 
@@ -473,10 +473,10 @@
             this.txtUsuario.PlaceholderText = "Usuario";
             this.txtUsuario.SelectedText = "";
             this.txtUsuario.ShadowDecoration.BorderRadius = 4;
-            this.txtUsuario.ShadowDecoration.Color = System.Drawing.Color.Teal;
+            this.txtUsuario.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(30)))));
             this.txtUsuario.ShadowDecoration.Depth = 200;
             this.txtUsuario.ShadowDecoration.Enabled = true;
-            this.txtUsuario.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 2, 3);
+            this.txtUsuario.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.txtUsuario.Size = new System.Drawing.Size(340, 35);
             this.txtUsuario.TabIndex = 29;
             // 
@@ -580,10 +580,10 @@
             this.txtNome.PlaceholderText = "Nome";
             this.txtNome.SelectedText = "";
             this.txtNome.ShadowDecoration.BorderRadius = 4;
-            this.txtNome.ShadowDecoration.Color = System.Drawing.Color.Teal;
+            this.txtNome.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(30)))));
             this.txtNome.ShadowDecoration.Depth = 200;
             this.txtNome.ShadowDecoration.Enabled = true;
-            this.txtNome.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 2, 3);
+            this.txtNome.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.txtNome.Size = new System.Drawing.Size(340, 40);
             this.txtNome.TabIndex = 0;
             // 

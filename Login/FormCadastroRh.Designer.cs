@@ -36,7 +36,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dtNascimento = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtCpf = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtEndereco = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtTelefone = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -59,6 +58,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.panelUser.SuspendLayout();
             this.panelIconPic.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
@@ -74,7 +74,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(43)))), ((int)(((byte)(81)))));
             this.label1.Location = new System.Drawing.Point(127, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(152, 25);
@@ -127,7 +127,7 @@
             // cbGenero
             // 
             this.cbGenero.BackColor = System.Drawing.Color.Transparent;
-            this.cbGenero.BorderColor = System.Drawing.Color.DarkCyan;
+            this.cbGenero.BorderColor = System.Drawing.Color.Gray;
             this.cbGenero.DisplayMember = "Masculino";
             this.cbGenero.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -177,9 +177,8 @@
             // 
             this.txtCpf.Animated = true;
             this.txtCpf.BackColor = System.Drawing.Color.Transparent;
-            this.txtCpf.BorderColor = System.Drawing.Color.White;
+            this.txtCpf.BorderColor = System.Drawing.Color.DarkGray;
             this.txtCpf.BorderRadius = 5;
-            this.txtCpf.BorderThickness = 0;
             this.txtCpf.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCpf.DefaultText = "";
             this.txtCpf.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -200,50 +199,16 @@
             this.txtCpf.ShadowDecoration.BorderRadius = 4;
             this.txtCpf.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(30)))));
             this.txtCpf.ShadowDecoration.Depth = 200;
-            this.txtCpf.ShadowDecoration.Enabled = true;
             this.txtCpf.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.txtCpf.Size = new System.Drawing.Size(340, 40);
+            this.txtCpf.Size = new System.Drawing.Size(340, 35);
             this.txtCpf.TabIndex = 6;
-            // 
-            // txtEndereco
-            // 
-            this.txtEndereco.Animated = true;
-            this.txtEndereco.BackColor = System.Drawing.Color.Transparent;
-            this.txtEndereco.BorderColor = System.Drawing.Color.White;
-            this.txtEndereco.BorderRadius = 5;
-            this.txtEndereco.BorderThickness = 0;
-            this.txtEndereco.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEndereco.DefaultText = "";
-            this.txtEndereco.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEndereco.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEndereco.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEndereco.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEndereco.FocusedState.BorderColor = System.Drawing.Color.White;
-            this.txtEndereco.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEndereco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(25)))), ((int)(((byte)(43)))));
-            this.txtEndereco.HoverState.BorderColor = System.Drawing.Color.Cyan;
-            this.txtEndereco.HoverState.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txtEndereco.Location = new System.Drawing.Point(26, 187);
-            this.txtEndereco.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtEndereco.PlaceholderText = "Endereço";
-            this.txtEndereco.SelectedText = "";
-            this.txtEndereco.ShadowDecoration.BorderRadius = 4;
-            this.txtEndereco.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(30)))));
-            this.txtEndereco.ShadowDecoration.Depth = 200;
-            this.txtEndereco.ShadowDecoration.Enabled = true;
-            this.txtEndereco.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.txtEndereco.Size = new System.Drawing.Size(340, 40);
-            this.txtEndereco.TabIndex = 5;
             // 
             // txtTelefone
             // 
             this.txtTelefone.Animated = true;
             this.txtTelefone.BackColor = System.Drawing.Color.Transparent;
-            this.txtTelefone.BorderColor = System.Drawing.Color.White;
+            this.txtTelefone.BorderColor = System.Drawing.Color.DarkGray;
             this.txtTelefone.BorderRadius = 5;
-            this.txtTelefone.BorderThickness = 0;
             this.txtTelefone.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTelefone.DefaultText = "";
             this.txtTelefone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -264,18 +229,16 @@
             this.txtTelefone.ShadowDecoration.BorderRadius = 4;
             this.txtTelefone.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(30)))));
             this.txtTelefone.ShadowDecoration.Depth = 200;
-            this.txtTelefone.ShadowDecoration.Enabled = true;
             this.txtTelefone.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.txtTelefone.Size = new System.Drawing.Size(340, 40);
+            this.txtTelefone.Size = new System.Drawing.Size(340, 35);
             this.txtTelefone.TabIndex = 4;
             // 
             // txtEmail
             // 
             this.txtEmail.Animated = true;
             this.txtEmail.BackColor = System.Drawing.Color.Transparent;
-            this.txtEmail.BorderColor = System.Drawing.Color.White;
+            this.txtEmail.BorderColor = System.Drawing.Color.DarkGray;
             this.txtEmail.BorderRadius = 5;
-            this.txtEmail.BorderThickness = 0;
             this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmail.DefaultText = "";
             this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -296,9 +259,8 @@
             this.txtEmail.ShadowDecoration.BorderRadius = 4;
             this.txtEmail.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(30)))));
             this.txtEmail.ShadowDecoration.Depth = 200;
-            this.txtEmail.ShadowDecoration.Enabled = true;
             this.txtEmail.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.txtEmail.Size = new System.Drawing.Size(340, 40);
+            this.txtEmail.Size = new System.Drawing.Size(340, 35);
             this.txtEmail.TabIndex = 3;
             // 
             // timer1
@@ -507,6 +469,7 @@
             // 
             this.panelEsquedoCad.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelEsquedoCad.BackColor = System.Drawing.Color.White;
+            this.panelEsquedoCad.Controls.Add(this.guna2TextBox1);
             this.panelEsquedoCad.Controls.Add(this.panelUser);
             this.panelEsquedoCad.Controls.Add(this.label7);
             this.panelEsquedoCad.Controls.Add(this.label6);
@@ -516,7 +479,6 @@
             this.panelEsquedoCad.Controls.Add(this.txtNome);
             this.panelEsquedoCad.Controls.Add(this.label2);
             this.panelEsquedoCad.Controls.Add(this.label1);
-            this.panelEsquedoCad.Controls.Add(this.txtEndereco);
             this.panelEsquedoCad.Controls.Add(this.cbGenero);
             this.panelEsquedoCad.Controls.Add(this.txtEmail);
             this.panelEsquedoCad.Controls.Add(this.txtTelefone);
@@ -559,9 +521,8 @@
             // 
             this.txtNome.Animated = true;
             this.txtNome.BackColor = System.Drawing.Color.Transparent;
-            this.txtNome.BorderColor = System.Drawing.Color.White;
+            this.txtNome.BorderColor = System.Drawing.Color.DarkGray;
             this.txtNome.BorderRadius = 5;
-            this.txtNome.BorderThickness = 0;
             this.txtNome.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNome.DefaultText = "";
             this.txtNome.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -582,9 +543,8 @@
             this.txtNome.ShadowDecoration.BorderRadius = 4;
             this.txtNome.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(30)))));
             this.txtNome.ShadowDecoration.Depth = 200;
-            this.txtNome.ShadowDecoration.Enabled = true;
             this.txtNome.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.txtNome.Size = new System.Drawing.Size(340, 40);
+            this.txtNome.Size = new System.Drawing.Size(340, 35);
             this.txtNome.TabIndex = 0;
             // 
             // panelFundoCad
@@ -668,6 +628,36 @@
             this.guna2Elipse1.BorderRadius = 30;
             this.guna2Elipse1.TargetControl = this;
             // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.Animated = true;
+            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2TextBox1.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2TextBox1.BorderRadius = 5;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.White;
+            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(25)))), ((int)(((byte)(43)))));
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.Cyan;
+            this.guna2TextBox1.HoverState.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.guna2TextBox1.Location = new System.Drawing.Point(26, 187);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.guna2TextBox1.PlaceholderText = "Endereço";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.ShadowDecoration.BorderRadius = 4;
+            this.guna2TextBox1.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(30)))));
+            this.guna2TextBox1.ShadowDecoration.Depth = 200;
+            this.guna2TextBox1.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.guna2TextBox1.Size = new System.Drawing.Size(340, 35);
+            this.guna2TextBox1.TabIndex = 30;
+            // 
             // FormCadastroRh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -698,7 +688,6 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtNascimento;
         private Guna.UI2.WinForms.Guna2TextBox txtCpf;
-        private Guna.UI2.WinForms.Guna2TextBox txtEndereco;
         private Guna.UI2.WinForms.Guna2TextBox txtTelefone;
         private Guna.UI2.WinForms.Guna2TextBox txtEmail;
         private Guna.UI2.WinForms.Guna2ComboBox cbGenero;
@@ -725,5 +714,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtConfirmarSenha;
         private Guna.UI2.WinForms.Guna2TextBox txtCodigoAcesso;
         private Guna.UI2.WinForms.Guna2TextBox txtSenha;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
     }
 }
